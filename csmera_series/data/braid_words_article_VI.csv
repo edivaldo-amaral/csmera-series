@@ -1,0 +1,5 @@
+label,knot,beta_word,role
+u,4_1,"[1,-2,1,-2]",source
+c,5_1,"[1,1,1,1,1]",target
+d,6_1,"[1,1,2,-1,-3,2,-3]",source
+s,5_2,"[1,1,1,2,-1,2]",target

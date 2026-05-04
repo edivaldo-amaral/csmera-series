@@ -1,0 +1,99 @@
+{
+  "phi": 1.618033988749895,
+  "A1": 1.4717382093085014,
+  "B": -4.779,
+  "rms_dex": 0.7200275861852485,
+  "note": "LO/C1 only. Expected RMS is ~0.720 dex, not 0.131 dex.",
+  "rows": [
+    {
+      "fermion": "e",
+      "knot": "3_1",
+      "sigma": -2.0,
+      "det": 3.0,
+      "n_topo": 3.2830118285892795,
+      "mass_pred_MeV": 1.1291040098667944,
+      "mass_ref_MeV": 0.51099895,
+      "residual_dex": -0.3443139419987414
+    },
+    {
+      "fermion": "u",
+      "knot": "4_1",
+      "sigma": 0.0,
+      "det": 5.0,
+      "n_topo": 3.3445518763691093,
+      "mass_pred_MeV": 1.3909284474646584,
+      "mass_ref_MeV": 2.16,
+      "residual_dex": 0.19114896168406958
+    },
+    {
+      "fermion": "d",
+      "knot": "6_1",
+      "sigma": 0.0,
+      "det": 9.0,
+      "n_topo": 4.566023657178559,
+      "mass_pred_MeV": 87.29542443432385,
+      "mass_ref_MeV": 4.67,
+      "residual_dex": -1.271674600310115
+    },
+    {
+      "fermion": "s",
+      "knot": "5_2",
+      "sigma": -2.0,
+      "det": 7.0,
+      "n_topo": 5.0437704306503495,
+      "mass_pred_MeV": 440.6661201020519,
+      "mass_ref_MeV": 93.4,
+      "residual_dex": -0.6737627855384207
+    },
+    {
+      "fermion": "mu",
+      "knot": "6_3",
+      "sigma": 0.0,
+      "det": 13.0,
+      "n_topo": 5.330187713371007,
+      "mass_pred_MeV": 1163.1639150281621,
+      "mass_ref_MeV": 105.6583755,
+      "residual_dex": -1.0417369914404095
+    },
+    {
+      "fermion": "c",
+      "knot": "5_1",
+      "sigma": -4.0,
+      "det": 5.0,
+      "n_topo": 5.34455187636911,
+      "mass_pred_MeV": 1221.1842883950703,
+      "mass_ref_MeV": 1090.0,
+      "residual_dex": -0.04935471014324122
+    },
+    {
+      "fermion": "tau",
+      "knot": "6_2",
+      "sigma": -2.0,
+      "det": 11.0,
+      "n_topo": 5.983034804893593,
+      "mass_pred_MeV": 10628.229652577555,
+      "mass_ref_MeV": 1776.86,
+      "residual_dex": -0.7768077191869374
+    },
+    {
+      "fermion": "b",
+      "knot": "7_6",
+      "sigma": 0.0,
+      "det": 19.0,
+      "n_topo": 6.118800132980395,
+      "mass_pred_MeV": 16837.280645838444,
+      "mass_ref_MeV": 4890.0,
+      "residual_dex": -0.5369630917055663
+    },
+    {
+      "fermion": "t",
+      "knot": "7_7",
+      "sigma": 0.0,
+      "det": 21.0,
+      "n_topo": 6.326782259239629,
+      "mass_pred_MeV": 34069.6124112372,
+      "mass_ref_MeV": 162500.0,
+      "residual_dex": 0.6784861724167666
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "scheme": "color_framed_commutator",
+  "dimension": 3840,
+  "rows": [
+    {
+      "sector": "SU3",
+      "chi_local_reference": 0.576759706661,
+      "chi_N80": 0.568894478192,
+      "delta_raw": -0.00786522846852,
+      "theta_su2_reference": 0.162322323364,
+      "theta_required_v11": 0.187167600417,
+      "mismatch_after_su2_reference": -0.0248452770526
+    },
+    {
+      "sector": "SU2",
+      "chi_local_reference": 0.239047270867,
+      "chi_N80": 0.221220375352,
+      "delta_raw": -0.0178268955153,
+      "theta_su2_reference": 0.0,
+      "theta_required_v11": 0.0,
+      "mismatch_after_su2_reference": 0.0
+    },
+    {
+      "sector": "U1",
+      "chi_local_reference": 0.430827551412,
+      "chi_N80": 0.335295311515,
+      "delta_raw": -0.0955322398966,
+      "theta_su2_reference": -1.26618486429,
+      "theta_required_v11": -1.21083714618,
+      "mismatch_after_su2_reference": -0.0553477181076
+    }
+  ],
+  "theta": {
+    "SU3": 0.162322323364,
+    "SU2": 0.0,
+    "U1": -1.26618486429
+  }
+}

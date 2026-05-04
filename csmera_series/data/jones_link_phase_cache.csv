@@ -1,0 +1,3 @@
+transition,source,target,gamma_word,chi_over_pi,chi_exact,status
+uc,u,c,"[1,1,1,1,1,2,-1,2,-1]",-0.2,-pi/5,independently_reproduced_by_TL_Jones_evaluator
+ds,d,s,"[1,1,1,2,-1,2,3,-2,3,1,-2,-1,-1]",0.2,pi/5,independently_reproduced_by_TL_Jones_evaluator

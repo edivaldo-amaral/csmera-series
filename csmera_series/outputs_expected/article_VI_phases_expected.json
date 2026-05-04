@@ -1,0 +1,102 @@
+{
+  "audit": "article_VI_link_phases",
+  "method": "Temperley-Lieb/Kauffman-bracket Jones evaluator; no phase cache is used.",
+  "convention": {
+    "sigma_i": "A I + A^{-1} e_i",
+    "sigma_i_inverse": "A^{-1} I + A e_i",
+    "delta": "-A^2 - A^{-2}",
+    "jones_normalization": "V_L(A)=(-A^3)^(-w(beta)) <closure(beta)>",
+    "closed_bracket_normalization": "delta^(number_of_loops - 1); unknot Jones value is 1",
+    "q": "exp(2*pi*i/5)",
+    "A_at_q": "q^{-1/4}=exp(-pi*i/10)"
+  },
+  "rows": [
+    {
+      "transition": "uc",
+      "source": "u",
+      "target": "c",
+      "strands": 3,
+      "beta_source": [
+        1,
+        -2,
+        1,
+        -2
+      ],
+      "beta_target": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "gamma_recomputed": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        -1
+      ],
+      "jones_polynomial_A": "(-A**24 + A**20 - 2*A**16 + 2*A**12 - 2*A**8 + A**4 - 1)/A**30",
+      "V_q_re_exact": "-1/2 + sqrt(5)/2",
+      "V_q_im_exact": "(-sqrt(10)/2 + sqrt(2))*sqrt(sqrt(5) + 5)",
+      "im_over_re_squared_exact": "5 - 2*sqrt(5)",
+      "V_q_numeric": "0.618033988749894848 - 0.449027976579585372*I",
+      "chi_over_pi": -0.2,
+      "chi_rad": -0.6283185307179586,
+      "chi_exact": "-pi/5",
+      "matches_expected_phase": true
+    },
+    {
+      "transition": "ds",
+      "source": "d",
+      "target": "s",
+      "strands": 4,
+      "beta_source": [
+        1,
+        1,
+        2,
+        -1,
+        -3,
+        2,
+        -3
+      ],
+      "beta_target": [
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2
+      ],
+      "gamma_recomputed": [
+        1,
+        1,
+        1,
+        2,
+        -1,
+        2,
+        3,
+        -2,
+        3,
+        1,
+        -2,
+        -1,
+        -1
+      ],
+      "jones_polynomial_A": "(A**24 + A**16 + A**8 + 1)/A**24",
+      "V_q_re_exact": "1/4 + sqrt(5)/4",
+      "V_q_im_exact": "(-sqrt(2) + sqrt(10))*sqrt(sqrt(5) + 5)/8",
+      "im_over_re_squared_exact": "5 - 2*sqrt(5)",
+      "V_q_numeric": "0.809016994374947424 + 0.587785252292473129*I",
+      "chi_over_pi": 0.2,
+      "chi_rad": 0.6283185307179586,
+      "chi_exact": "pi/5",
+      "matches_expected_phase": true
+    }
+  ],
+  "cache_used": false
+}

@@ -1,0 +1,161 @@
+{
+  "B": -4.779,
+  "effective": {
+    "mode": "effective",
+    "rms_global_dex": 0.13130631509616475,
+    "rms_excluding_top_dex": 0.13927137852963678,
+    "rows": [
+      {
+        "fermion": "e",
+        "knot": "3_1",
+        "log10Z": 4.3623206108244155,
+        "mass_pred_MeV": 0.3831074617887413,
+        "mass_ref_MeV": 0.51099895,
+        "residual_dex": 0.12509939692345856
+      },
+      {
+        "fermion": "u",
+        "knot": "4_1",
+        "log10Z": 5.353449303093464,
+        "mass_pred_MeV": 3.753611345298702,
+        "mass_ref_MeV": 2.16,
+        "residual_dex": -0.23999555194253275
+      },
+      {
+        "fermion": "d",
+        "knot": "6_1",
+        "log10Z": 5.649932187701206,
+        "mass_pred_MeV": 7.429031292795535,
+        "mass_ref_MeV": 4.67,
+        "residual_dex": -0.20161530713509423
+      },
+      {
+        "fermion": "s",
+        "knot": "5_2",
+        "log10Z": 6.693869598599081,
+        "mass_pred_MeV": 82.19958001658014,
+        "mass_ref_MeV": 93.4,
+        "residual_dex": 0.0554772776310124
+      },
+      {
+        "fermion": "mu",
+        "knot": "6_3",
+        "log10Z": 6.826570140334139,
+        "mass_pred_MeV": 111.57583363324773,
+        "mass_ref_MeV": 105.6583755,
+        "residual_dex": -0.023666211219727007
+      },
+      {
+        "fermion": "c",
+        "knot": "5_1",
+        "log10Z": 7.6441637308146415,
+        "mass_pred_MeV": 733.1008631021996,
+        "mass_ref_MeV": 1090.0,
+        "residual_dex": 0.1722627671259822
+      },
+      {
+        "fermion": "tau",
+        "knot": "6_2",
+        "log10Z": 7.946945337627162,
+        "mass_pred_MeV": 1472.1272018274765,
+        "mass_ref_MeV": 1776.86,
+        "residual_dex": 0.08170787317043615
+      },
+      {
+        "fermion": "b",
+        "knot": "7_6",
+        "log10Z": 8.432430961699314,
+        "mass_pred_MeV": 4502.264046554223,
+        "mass_ref_MeV": 4890.0,
+        "residual_dex": 0.03587789742430614
+      },
+      {
+        "fermion": "t",
+        "knot": "7_7",
+        "log10Z": 9.989874265954683,
+        "mass_pred_MeV": 162507.8205821954,
+        "mass_ref_MeV": 162500.0,
+        "residual_dex": -2.090063978954504e-05
+      }
+    ]
+  },
+  "global": {
+    "mode": "global",
+    "rms_global_dex": 0.14174542338875573,
+    "rms_excluding_top_dex": 0.15034372467449927,
+    "rows": [
+      {
+        "fermion": "e",
+        "knot": "3_1",
+        "log10Z": 4.362365309573,
+        "mass_pred_MeV": 0.3831468942616481,
+        "mass_ref_MeV": 0.51099895,
+        "residual_dex": 0.1250546981748743
+      },
+      {
+        "fermion": "u",
+        "knot": "4_1",
+        "log10Z": 5.353449303093,
+        "mass_pred_MeV": 3.753611345294695,
+        "mass_ref_MeV": 2.16,
+        "residual_dex": -0.23999555194206912
+      },
+      {
+        "fermion": "d",
+        "knot": "6_1",
+        "log10Z": 5.699962005556,
+        "mass_pred_MeV": 8.336082528443503,
+        "mass_ref_MeV": 4.67,
+        "residual_dex": -0.2516451249898882
+      },
+      {
+        "fermion": "s",
+        "knot": "5_2",
+        "log10Z": 6.693859461804,
+        "mass_pred_MeV": 82.19766143228107,
+        "mass_ref_MeV": 93.4,
+        "residual_dex": 0.05548741442609306
+      },
+      {
+        "fermion": "mu",
+        "knot": "6_3",
+        "log10Z": 6.826570140334,
+        "mass_pred_MeV": 111.5758336332119,
+        "mass_ref_MeV": 105.6583755,
+        "residual_dex": -0.023666211219587563
+      },
+      {
+        "fermion": "c",
+        "knot": "5_1",
+        "log10Z": 7.644163730814,
+        "mass_pred_MeV": 733.100863101117,
+        "mass_ref_MeV": 1090.0,
+        "residual_dex": 0.17226276712662347
+      },
+      {
+        "fermion": "tau",
+        "knot": "6_2",
+        "log10Z": 7.930333768986,
+        "mass_pred_MeV": 1416.8822802825,
+        "mass_ref_MeV": 1776.86,
+        "residual_dex": 0.09831944181159802
+      },
+      {
+        "fermion": "b",
+        "knot": "7_6",
+        "log10Z": 8.432476517813,
+        "mass_pred_MeV": 4502.736344543587,
+        "mass_ref_MeV": 4890.0,
+        "residual_dex": 0.03583234131061941
+      },
+      {
+        "fermion": "t",
+        "knot": "7_7",
+        "log10Z": 9.98988612055,
+        "mass_pred_MeV": 162512.2564910593,
+        "mass_ref_MeV": 162500.0,
+        "residual_dex": -3.275523510737344e-05
+      }
+    ]
+  }
+}
