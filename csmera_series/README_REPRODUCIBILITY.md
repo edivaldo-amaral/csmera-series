@@ -100,12 +100,16 @@ csmera_series/
     test_all_audits.py
 ```
 
-## Next needed improvement
+## Artigo VII — Objetivos de unificação dinâmica
 
-Add a script:
+O script `reproduce_article_VII_objectives.py` verifica os cinco resultados principais:
+1. RMS V19 projetada: 0.5937 dex
+2. Constante Dynkin não universal
+3. u/c/t fecham com V_mass multiplicativo
+4. RMS V_mass multiplicativo: 0.6250 dex
+5. RMS holonomia de Cartan: 0.1244 dex (passa critério 0.13)
 
-```text
-scripts/reproduce_article_VI_link_phases_from_jones.py
-```
-
-that derives `chi_uc = -pi/5` and `chi_ds = +pi/5` directly from braid words, a stated closure convention, and a Jones/Kauffman/Markov normalization. Once that exists, the Article VI phase audit will no longer depend on a cache.
+Para reproduzir o resultado do Teorema principal do Artigo VII:
+a fase θ_i = θ_boundary(β,x) + 2π(Y_SM + t3 + t2) com coeficiente
+ntopo(Kf) × ln10/N_UV produz fechamento dinâmico global com
+ressalva na primeira geração (e, u).
