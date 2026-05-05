@@ -1,0 +1,1904 @@
+{
+  "calcA": {
+    "user_T_half_Y2": {
+      "N80": {
+        "sums": {
+          "SU3": {
+            "sum": 1.916509759780638,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5686234771928866,
+                "contribution": 0.2843117385964433
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5663125079991005,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5687354587280424,
+                "contribution": 0.2843677293640212
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5686234771928866,
+                "contribution": 0.2843117385964433
+              }
+            ],
+            "C_required": 0.012963814493093825
+          },
+          "U1": {
+            "sum": 1.5837371039298078,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.3414547222746478,
+                "contribution": 0.3414547222746478
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.33417975942029443,
+                "contribution": 0.14852433752013086
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0371277685139325
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0371277685139325
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.3436893791786133,
+                "contribution": 0.3436893791786133
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.3345891741446394,
+                "contribution": 0.14870629961983972
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.3414547222746478,
+                "contribution": 0.3414547222746478
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0371277685139325
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.33417975942029443,
+                "contribution": 0.14852433752013086
+              }
+            ],
+            "C_required": 0.03494754145916192
+          }
+        },
+        "C_SU3": 0.012963814493093825,
+        "C_U1": 0.03494754145916192,
+        "C_ratio_U1_over_SU3": 2.6957761141814722,
+        "common_C_mean": 0.023955677976127875,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.020531274021175685
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.0669773042868223,
+          "U1": 0.0553477181
+        }
+      },
+      "local": {
+        "sums": {
+          "SU3": {
+            "sum": 1.8610359475701443,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053088696944542,
+                "contribution": 0.3026544348472271
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053090473301381,
+                "contribution": 0.30265452366506906
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053088696944542,
+                "contribution": 0.3026544348472271
+              }
+            ],
+            "C_required": 0.01335024024250534
+          },
+          "U1": {
+            "sum": 2.9932179993844934,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.7849990879549296,
+                "contribution": 0.7849990879549296
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.4078414050923129,
+                "contribution": 0.18126284670769463
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.28329658618986286,
+                "contribution": 0.03147739846554032
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.28329658618986286,
+                "contribution": 0.03147739846554032
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.7849990879549296,
+                "contribution": 0.7849990879549296
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.4078414050923129,
+                "contribution": 0.18126284670769463
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": 0.7849990879549296,
+                "contribution": 0.7849990879549296
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.28329658618986286,
+                "contribution": 0.03147739846554032
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": 0.4078414050923129,
+                "contribution": 0.18126284670769463
+              }
+            ],
+            "C_required": 0.018491041451501815
+          }
+        },
+        "C_SU3": 0.01335024024250534,
+        "C_U1": 0.018491041451501815,
+        "C_ratio_U1_over_SU3": 1.3850718126126949,
+        "common_C_mean": 0.015920640847003578,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.03996017938997419
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.034412492849254496,
+          "U1": 0.0553477181
+        }
+      },
+      "delta": {
+        "sums": {
+          "SU3": {
+            "sum": 0.055473812210493634,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.03668539250156755,
+                "contribution": -0.018342696250783774
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3552873550916047,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.0365735886020957,
+                "contribution": -0.01828679430104785
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.03668539250156755,
+                "contribution": -0.018342696250783774
+              }
+            ],
+            "C_required": 0.44787397890964076
+          },
+          "U1": {
+            "sum": -1.4094808954546858,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": -0.44354436568028177,
+                "contribution": -0.44354436568028177
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": -0.0736616456720185,
+                "contribution": -0.032738509187563776
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.05085333043552964,
+                "contribution": 0.005650370048392182
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.05085333043552964,
+                "contribution": 0.005650370048392182
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": -0.44130970877631626,
+                "contribution": -0.44130970877631626
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": -0.07325223094767352,
+                "contribution": -0.032556547087854895
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.0,
+                "chi": -0.44354436568028177,
+                "contribution": -0.44354436568028177
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1111111111111111,
+                "chi": 0.05085333043552964,
+                "contribution": 0.005650370048392182
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4444444444444444,
+                "chi": -0.0736616456720185,
+                "contribution": -0.032738509187563776
+              }
+            ],
+            "C_required": -0.039268157715713715
+          }
+        },
+        "C_SU3": 0.44787397890964076,
+        "C_U1": -0.039268157715713715,
+        "C_ratio_U1_over_SU3": -0.08767680098610088,
+        "common_C_mean": 0.2043029105969635,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": -0.6312698168444135
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": -0.0021783544069735494,
+          "U1": 0.0553477181
+        }
+      }
+    },
+    "user_T_half_GUT_3over5_Y2": {
+      "N80": {
+        "sums": {
+          "SU3": {
+            "sum": 1.916509759780638,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5686234771928866,
+                "contribution": 0.2843117385964433
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5663125079991005,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5687354587280424,
+                "contribution": 0.2843677293640212
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.7090123688158201,
+                "contribution": 0.35450618440791004
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.5686234771928866,
+                "contribution": 0.2843117385964433
+              }
+            ],
+            "C_required": 0.012963814493093825
+          },
+          "U1": {
+            "sum": 0.9502422623578847,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.3414547222746478,
+                "contribution": 0.20487283336478868
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.33417975942029443,
+                "contribution": 0.08911460251207852
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0222766611083595
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0222766611083595
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.3436893791786133,
+                "contribution": 0.20621362750716798
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.3345891741446394,
+                "contribution": 0.08922377977190384
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.3414547222746478,
+                "contribution": 0.20487283336478868
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.3341499166253925,
+                "contribution": 0.0222766611083595
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.33417975942029443,
+                "contribution": 0.08911460251207852
+              }
+            ],
+            "C_required": 0.058245902431936544
+          }
+        },
+        "C_SU3": 0.012963814493093825,
+        "C_U1": 0.058245902431936544,
+        "C_ratio_U1_over_SU3": 4.492960190302454,
+        "common_C_mean": 0.03560485846251518,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.012318764412705411
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.11162884047803719,
+          "U1": 0.0553477181
+        }
+      },
+      "local": {
+        "sums": {
+          "SU3": {
+            "sum": 1.8610359475701443,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053088696944542,
+                "contribution": 0.3026544348472271
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053090473301381,
+                "contribution": 0.30265452366506906
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.6353817028070807,
+                "contribution": 0.31769085140354036
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": 0.6053088696944542,
+                "contribution": 0.3026544348472271
+              }
+            ],
+            "C_required": 0.01335024024250534
+          },
+          "U1": {
+            "sum": 1.7959307996306961,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.7849990879549296,
+                "contribution": 0.47099945277295774
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.4078414050923129,
+                "contribution": 0.10875770802461678
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.28329658618986286,
+                "contribution": 0.01888643907932419
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.28329658618986286,
+                "contribution": 0.01888643907932419
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.7849990879549296,
+                "contribution": 0.47099945277295774
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.4078414050923129,
+                "contribution": 0.10875770802461678
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": 0.7849990879549296,
+                "contribution": 0.47099945277295774
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.28329658618986286,
+                "contribution": 0.01888643907932419
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": 0.4078414050923129,
+                "contribution": 0.10875770802461678
+              }
+            ],
+            "C_required": 0.030818402419169687
+          }
+        },
+        "C_SU3": 0.01335024024250534,
+        "C_U1": 0.030818402419169687,
+        "C_ratio_U1_over_SU3": 2.308453021021158,
+        "common_C_mean": 0.022084321330837514,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.023976107633984514
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.057354154748757484,
+          "U1": 0.0553477181
+        }
+      },
+      "delta": {
+        "sums": {
+          "SU3": {
+            "sum": 0.055473812210493634,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.03668539250156755,
+                "contribution": -0.018342696250783774
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3552873550916047,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.0365735886020957,
+                "contribution": -0.01828679430104785
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.5,
+                "chi": 0.07363066600873935,
+                "contribution": 0.03681533300436968
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.5,
+                "chi": -0.03668539250156755,
+                "contribution": -0.018342696250783774
+              }
+            ],
+            "C_required": 0.44787397890964076
+          },
+          "U1": {
+            "sum": -0.8456885372728113,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": -0.44354436568028177,
+                "contribution": -0.26612661940816906
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": -0.0736616456720185,
+                "contribution": -0.019643105512538266
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.05085333043552964,
+                "contribution": 0.0033902220290353093
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.05085333043552964,
+                "contribution": 0.0033902220290353093
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": -0.44130970877631626,
+                "contribution": -0.26478582526578975
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": -0.07325223094767352,
+                "contribution": -0.01953392825271294
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.6,
+                "chi": -0.44354436568028177,
+                "contribution": -0.26612661940816906
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.06666666666666667,
+                "chi": 0.05085333043552964,
+                "contribution": 0.0033902220290353093
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.26666666666666666,
+                "chi": -0.0736616456720185,
+                "contribution": -0.019643105512538266
+              }
+            ],
+            "C_required": -0.06544692952618954
+          }
+        },
+        "C_SU3": 0.44787397890964076,
+        "C_U1": -0.06544692952618954,
+        "C_ratio_U1_over_SU3": -0.14612800164350148,
+        "common_C_mean": 0.19121352469172562,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": -0.37876189010664807
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": -0.0036305906782892494,
+          "U1": 0.0553477181
+        }
+      }
+    },
+    "articleV_code_dynkin_loop_weight": {
+      "N80": {
+        "sums": {
+          "SU3": {
+            "sum": 0.6388365865935459,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.5686234771928866,
+                "contribution": 0.09477057953214776
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.7090123688158201,
+                "contribution": 0.11816872813597001
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.7090123688158201,
+                "contribution": 0.11816872813597001
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5663125079991005,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.5687354587280424,
+                "contribution": 0.0947892431213404
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.5667124014507863,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.7090123688158201,
+                "contribution": 0.11816872813597001
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.5686234771928866,
+                "contribution": 0.09477057953214776
+              }
+            ],
+            "C_required": 0.03889144347928148
+          },
+          "U1": {
+            "sum": 1.8960923221634909,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.3414547222746478,
+                "contribution": 0.42681840284330974
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.33417975942029443,
+                "contribution": 0.15780710861513902
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.3341499166253925,
+                "contribution": 0.04640971064241563
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.3341499166253925,
+                "contribution": 0.04640971064241563
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.3436893791786133,
+                "contribution": 0.42961172397326663
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.3345891741446394,
+                "contribution": 0.1580004433460797
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.3414547222746478,
+                "contribution": 0.42681840284330974
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.3341499166253925,
+                "contribution": 0.04640971064241563
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.33417975942029443,
+                "contribution": 0.15780710861513902
+              }
+            ],
+            "C_required": 0.029190413068519157
+          }
+        },
+        "C_SU3": 0.03889144347928148,
+        "C_U1": 0.029190413068519157,
+        "C_ratio_U1_over_SU3": 0.7505613177888262,
+        "common_C_mean": 0.03404092827390032,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.07374176737892098
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.018647903845948412,
+          "U1": 0.0553477181
+        }
+      },
+      "local": {
+        "sums": {
+          "SU3": {
+            "sum": 0.6203453158567147,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.6053088696944542,
+                "contribution": 0.10088481161574236
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.6353817028070807,
+                "contribution": 0.10589695046784678
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.6353817028070807,
+                "contribution": 0.10589695046784678
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.6053090473301381,
+                "contribution": 0.10088484122168968
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.2110251529074958,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.6353817028070807,
+                "contribution": 0.10589695046784678
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": 0.6053088696944542,
+                "contribution": 0.10088481161574236
+              }
+            ],
+            "C_required": 0.040050720727516025
+          },
+          "U1": {
+            "sum": 3.6395621479575384,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.7849990879549296,
+                "contribution": 0.981248859943662
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.4078414050923129,
+                "contribution": 0.19259177462692553
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.28329658618986286,
+                "contribution": 0.0393467480819254
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.28329658618986286,
+                "contribution": 0.0393467480819254
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.7849990879549296,
+                "contribution": 0.981248859943662
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.4078414050923129,
+                "contribution": 0.19259177462692553
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": 0.7849990879549296,
+                "contribution": 0.981248859943662
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.28329658618986286,
+                "contribution": 0.0393467480819254
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": 0.4078414050923129,
+                "contribution": 0.19259177462692553
+              }
+            ],
+            "C_required": 0.015207246325237286
+          }
+        },
+        "C_SU3": 0.040050720727516025,
+        "C_U1": 0.015207246325237286,
+        "C_ratio_U1_over_SU3": 0.37969969201551623,
+        "common_C_mean": 0.027628983526376653,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": 0.14576708715828574
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": 0.009433744024940188,
+          "U1": 0.0553477181
+        }
+      },
+      "delta": {
+        "sums": {
+          "SU3": {
+            "sum": 0.01849127073683121,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": -0.03668539250156755,
+                "contribution": -0.006114232083594591
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.07363066600873935,
+                "contribution": 0.012271777668123224
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.07363066600873935,
+                "contribution": 0.012271777668123224
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3552873550916047,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": -0.0365735886020957,
+                "contribution": -0.0060955981003492825
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 0.0,
+                "chi": 0.3556872485432905,
+                "contribution": 0.0
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.16666666666666666,
+                "chi": 0.07363066600873935,
+                "contribution": 0.012271777668123224
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.16666666666666666,
+                "chi": -0.03668539250156755,
+                "contribution": -0.006114232083594591
+              }
+            ],
+            "C_required": 1.3436219367289224
+          },
+          "U1": {
+            "sum": -1.743469825794048,
+            "contrib": [
+              {
+                "fermion": "e",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": -0.44354436568028177,
+                "contribution": -0.5544304571003522
+              },
+              {
+                "fermion": "u",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": -0.0736616456720185,
+                "contribution": -0.03478466601178651
+              },
+              {
+                "fermion": "d",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.05085333043552964,
+                "contribution": 0.007062962560490229
+              },
+              {
+                "fermion": "s",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.05085333043552964,
+                "contribution": 0.007062962560490229
+              },
+              {
+                "fermion": "mu",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": -0.44130970877631626,
+                "contribution": -0.5516371359703953
+              },
+              {
+                "fermion": "c",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": -0.07325223094767352,
+                "contribution": -0.03459133128084583
+              },
+              {
+                "fermion": "tau",
+                "family": "lep",
+                "weight": 1.25,
+                "chi": -0.44354436568028177,
+                "contribution": -0.5544304571003522
+              },
+              {
+                "fermion": "b",
+                "family": "dn",
+                "weight": 0.1388888888888889,
+                "chi": 0.05085333043552964,
+                "contribution": 0.007062962560490229
+              },
+              {
+                "fermion": "t",
+                "family": "up",
+                "weight": 0.4722222222222222,
+                "chi": -0.0736616456720185,
+                "contribution": -0.03478466601178651
+              }
+            ],
+            "C_required": -0.03174572756072355
+          }
+        },
+        "C_SU3": 1.3436219367289224,
+        "C_U1": -0.03174572756072355,
+        "C_ratio_U1_over_SU3": -0.0236269792066727,
+        "common_C_mean": 0.6559381045840994,
+        "Theta_pred_with_C_SU3": {
+          "SU3": 0.024845277,
+          "U1": -2.3425643039618356
+        },
+        "Theta_pred_with_C_U1": {
+          "SU3": -0.0005870188430630235,
+          "U1": 0.0553477181
+        }
+      }
+    }
+  },
+  "calcB": {
+    "records": [
+      {
+        "fermion": "e",
+        "knot": "3_1",
+        "family": "lep",
+        "M17": 4.3623206108244155,
+        "Delta_M17": -5.627553655130267,
+        "v_mass_log": -0.16197401445408885,
+        "support_size": 18,
+        "lam_base_SU3": 0.0020664312016865443,
+        "lam_abs_base_SU3": 0.0020664312016865443,
+        "lam_add_SU3": -0.16197401445408893,
+        "lam_abs_add_SU3": 0.16197401445408893,
+        "lam_mult_abs_SU3": 0.0017574239072881102,
+        "lam_base_SU2": 0.0020664312016865443,
+        "lam_abs_base_SU2": 0.0020664312016865443,
+        "lam_add_SU2": -0.16197401445408893,
+        "lam_abs_add_SU2": 0.16197401445408893,
+        "lam_mult_abs_SU2": 0.0017574239072881102,
+        "lam_base_U1": 0.0020664312016865443,
+        "lam_abs_base_U1": 0.0020664312016865443,
+        "lam_add_U1": -0.16197401445408893,
+        "lam_abs_add_U1": 0.16197401445408893,
+        "lam_mult_abs_U1": 0.0017574239072881102,
+        "target_SU3": 0.008766251349694033,
+        "dev_dex_base_SU3": -0.6275929680108602,
+        "dev_dex_add_SU3": 1.2666314273474535,
+        "dev_dex_mult_SU3": -0.6979373886999884,
+        "target_SU2": 0.008766251349694033,
+        "dev_dex_base_SU2": -0.6275929680108602,
+        "dev_dex_add_SU2": 1.2666314273474535,
+        "dev_dex_mult_SU2": -0.6979373886999884,
+        "target_U1": 0.008766251349694033,
+        "dev_dex_base_U1": -0.6275929680108602,
+        "dev_dex_add_U1": 1.2666314273474535,
+        "dev_dex_mult_U1": -0.6979373886999884,
+        "lam_geom_base": 0.002066431201686544,
+        "target_geom_base": 0.008766251349694032,
+        "dev_dex_geom_base": -0.6275929680108602,
+        "lam_geom_add": 0.16197401445408893,
+        "target_geom_add": 0.008766251349694032,
+        "dev_dex_geom_add": 1.2666314273474535,
+        "lam_geom_mult": 0.0017574239072881107,
+        "target_geom_mult": 0.008766251349694032,
+        "dev_dex_geom_mult": -0.6979373886999883
+      },
+      {
+        "fermion": "u",
+        "knot": "4_1",
+        "family": "up",
+        "M17": 5.353449303093464,
+        "Delta_M17": -4.636424962861219,
+        "v_mass_log": -0.13344703755337145,
+        "support_size": 81,
+        "lam_base_SU3": 0.010307618574955919,
+        "lam_abs_base_SU3": 0.010307618574955919,
+        "lam_add_SU3": -0.13344703755337156,
+        "lam_abs_add_SU3": 0.13344703755337156,
+        "lam_mult_abs_SU3": 0.009019927097587527,
+        "lam_base_SU2": 0.010307618574955919,
+        "lam_abs_base_SU2": 0.010307618574955919,
+        "lam_add_SU2": -0.13344703755337156,
+        "lam_abs_add_SU2": 0.13344703755337156,
+        "lam_mult_abs_SU2": 0.009019927097587527,
+        "lam_base_U1": 0.010307618574955919,
+        "lam_abs_base_U1": 0.010307618574955919,
+        "lam_add_U1": -0.13344703755337156,
+        "lam_abs_add_U1": 0.13344703755337156,
+        "lam_mult_abs_U1": 0.009019927097587527,
+        "target_SU3": 0.009019927097587527,
+        "dev_dex_base_SU3": 0.05795531203576529,
+        "dev_dex_add_SU3": 1.1701059097193358,
+        "dev_dex_mult_SU3": 0.0,
+        "target_SU2": 0.009019927097587527,
+        "dev_dex_base_SU2": 0.05795531203576529,
+        "dev_dex_add_SU2": 1.1701059097193358,
+        "dev_dex_mult_SU2": 0.0,
+        "target_U1": 0.009019927097587527,
+        "dev_dex_base_U1": 0.05795531203576529,
+        "dev_dex_add_U1": 1.1701059097193358,
+        "dev_dex_mult_U1": 0.0,
+        "lam_geom_base": 0.010307618574955916,
+        "target_geom_base": 0.009019927097587525,
+        "dev_dex_geom_base": 0.057955312035765205,
+        "lam_geom_add": 0.1334470375533716,
+        "target_geom_add": 0.009019927097587525,
+        "dev_dex_geom_add": 1.170105909719336,
+        "lam_geom_mult": 0.009019927097587525,
+        "target_geom_mult": 0.009019927097587525,
+        "dev_dex_geom_mult": 0.0
+      },
+      {
+        "fermion": "d",
+        "knot": "6_1",
+        "family": "dn",
+        "M17": 5.649932187701206,
+        "Delta_M17": -4.339942078253476,
+        "v_mass_log": -0.12491357417305067,
+        "support_size": 108,
+        "lam_base_SU3": -0.004466242093821905,
+        "lam_abs_base_SU3": 0.004466242093821905,
+        "lam_add_SU3": -0.12937981626687256,
+        "lam_abs_add_SU3": 0.12937981626687256,
+        "lam_mult_abs_SU3": 0.003941785471338778,
+        "lam_base_SU2": -0.004466242093821905,
+        "lam_abs_base_SU2": 0.004466242093821905,
+        "lam_add_SU2": -0.12937981626687256,
+        "lam_abs_add_SU2": 0.12937981626687256,
+        "lam_mult_abs_SU2": 0.003941785471338778,
+        "lam_base_U1": -0.004466242093821905,
+        "lam_abs_base_U1": 0.004466242093821905,
+        "lam_add_U1": -0.12937981626687256,
+        "lam_abs_add_U1": 0.12937981626687256,
+        "lam_mult_abs_U1": 0.003941785471338778,
+        "target_SU3": 0.00909722766687155,
+        "dev_dex_base_SU3": -0.30896680306431074,
+        "dev_dex_add_SU3": 1.1529574665765974,
+        "dev_dex_mult_SU3": -0.3632160790424792,
+        "target_SU2": 0.00909722766687155,
+        "dev_dex_base_SU2": -0.30896680306431074,
+        "dev_dex_add_SU2": 1.1529574665765974,
+        "dev_dex_mult_SU2": -0.3632160790424792,
+        "target_U1": 0.00909722766687155,
+        "dev_dex_base_U1": -0.30896680306431074,
+        "dev_dex_add_U1": 1.1529574665765974,
+        "dev_dex_mult_U1": -0.3632160790424792,
+        "lam_geom_base": 0.004466242093821904,
+        "target_geom_base": 0.009097227666871547,
+        "dev_dex_geom_base": -0.3089668030643107,
+        "lam_geom_add": 0.12937981626687253,
+        "target_geom_add": 0.009097227666871547,
+        "dev_dex_geom_add": 1.1529574665765974,
+        "lam_geom_mult": 0.00394178547133878,
+        "target_geom_mult": 0.009097227666871547,
+        "dev_dex_geom_mult": -0.3632160790424787
+      },
+      {
+        "fermion": "s",
+        "knot": "5_2",
+        "family": "dn",
+        "M17": 6.693869598599081,
+        "Delta_M17": -3.296004667355602,
+        "v_mass_log": -0.0948666401686476,
+        "support_size": 108,
+        "lam_base_SU3": -0.004466242093821905,
+        "lam_abs_base_SU3": 0.004466242093821905,
+        "lam_add_SU3": -0.09933288226246952,
+        "lam_abs_add_SU3": 0.09933288226246952,
+        "lam_mult_abs_SU3": 0.004062021353267381,
+        "lam_base_SU2": -0.004466242093821905,
+        "lam_abs_base_SU2": 0.004466242093821905,
+        "lam_add_SU2": -0.09933288226246952,
+        "lam_abs_add_SU2": 0.09933288226246952,
+        "lam_mult_abs_SU2": 0.004062021353267381,
+        "lam_base_U1": -0.004466242093821905,
+        "lam_abs_base_U1": 0.004466242093821905,
+        "lam_add_U1": -0.09933288226246952,
+        "lam_abs_add_U1": 0.09933288226246952,
+        "lam_mult_abs_U1": 0.004062021353267381,
+        "target_SU3": 0.00937471947853529,
+        "dev_dex_base_SU3": -0.32201602070053426,
+        "dev_dex_add_SU3": 1.0251347561086694,
+        "dev_dex_mult_SU3": -0.3632160790424793,
+        "target_SU2": 0.00937471947853529,
+        "dev_dex_base_SU2": -0.32201602070053426,
+        "dev_dex_add_SU2": 1.0251347561086694,
+        "dev_dex_mult_SU2": -0.3632160790424793,
+        "target_U1": 0.00937471947853529,
+        "dev_dex_base_U1": -0.32201602070053426,
+        "dev_dex_add_U1": 1.0251347561086694,
+        "dev_dex_mult_U1": -0.3632160790424793,
+        "lam_geom_base": 0.004466242093821904,
+        "target_geom_base": 0.009374719478535286,
+        "dev_dex_geom_base": -0.3220160207005342,
+        "lam_geom_add": 0.0993328822624695,
+        "target_geom_add": 0.009374719478535286,
+        "dev_dex_geom_add": 1.0251347561086697,
+        "lam_geom_mult": 0.004062021353267385,
+        "target_geom_mult": 0.009374719478535286,
+        "dev_dex_geom_mult": -0.36321607904247877
+      },
+      {
+        "fermion": "mu",
+        "knot": "6_3",
+        "family": "lep",
+        "M17": 6.826570140334139,
+        "Delta_M17": -3.1633041256205434,
+        "v_mass_log": -0.09104721155325535,
+        "support_size": 18,
+        "lam_base_SU3": -0.00048781823442460245,
+        "lam_abs_base_SU3": 0.00048781823442460245,
+        "lam_add_SU3": -0.09153502978767995,
+        "lam_abs_add_SU3": 0.09153502978767995,
+        "lam_mult_abs_SU3": 0.00044536566082830525,
+        "lam_base_SU2": -0.00048781823442460245,
+        "lam_abs_base_SU2": 0.00048781823442460245,
+        "lam_add_SU2": -0.09153502978767995,
+        "lam_abs_add_SU2": 0.09153502978767995,
+        "lam_mult_abs_SU2": 0.00044536566082830525,
+        "lam_base_U1": -0.00048781823442460245,
+        "lam_abs_base_U1": 0.00048781823442460245,
+        "lam_add_U1": -0.09153502978767995,
+        "lam_abs_add_U1": 0.09153502978767995,
+        "lam_mult_abs_U1": 0.00044536566082830525,
+        "target_SU3": 0.009410594016880467,
+        "dev_dex_base_SU3": -1.285359007879668,
+        "dev_dex_add_SU3": 0.9879702893126159,
+        "dev_dex_mult_SU3": -1.3249003094499248,
+        "target_SU2": 0.009410594016880467,
+        "dev_dex_base_SU2": -1.285359007879668,
+        "dev_dex_add_SU2": 0.9879702893126159,
+        "dev_dex_mult_SU2": -1.3249003094499248,
+        "target_U1": 0.009410594016880467,
+        "dev_dex_base_U1": -1.285359007879668,
+        "dev_dex_add_U1": 0.9879702893126159,
+        "dev_dex_mult_U1": -1.3249003094499248,
+        "lam_geom_base": 0.0004878182344246019,
+        "target_geom_base": 0.009410594016880464,
+        "dev_dex_geom_base": -1.2853590078796684,
+        "lam_geom_add": 0.09153502978767995,
+        "target_geom_add": 0.009410594016880464,
+        "dev_dex_geom_add": 0.987970289312616,
+        "lam_geom_mult": 0.0004453656608283051,
+        "target_geom_mult": 0.009410594016880464,
+        "dev_dex_geom_mult": -1.3249003094499248
+      },
+      {
+        "fermion": "c",
+        "knot": "5_1",
+        "family": "up",
+        "M17": 7.6441637308146415,
+        "Delta_M17": -2.345710535140041,
+        "v_mass_log": -0.0675149763836568,
+        "support_size": 81,
+        "lam_base_SU3": -0.010307618574955924,
+        "lam_abs_base_SU3": 0.010307618574955924,
+        "lam_add_SU3": -0.07782259495861273,
+        "lam_abs_add_SU3": 0.07782259495861273,
+        "lam_mult_abs_SU3": 0.009634672521915386,
+        "lam_base_SU2": -0.010307618574955924,
+        "lam_abs_base_SU2": 0.010307618574955924,
+        "lam_add_SU2": -0.07782259495861273,
+        "lam_abs_add_SU2": 0.07782259495861273,
+        "lam_mult_abs_SU2": 0.009634672521915386,
+        "lam_base_U1": -0.010307618574955924,
+        "lam_abs_base_U1": 0.010307618574955924,
+        "lam_add_U1": -0.07782259495861273,
+        "lam_abs_add_U1": 0.07782259495861273,
+        "lam_mult_abs_U1": 0.009634672521915386,
+        "target_SU3": 0.009634672521915381,
+        "dev_dex_base_SU3": 0.029321381689250695,
+        "dev_dex_add_SU3": 0.9072687502860105,
+        "dev_dex_mult_SU3": 1.9286549331065737e-16,
+        "target_SU2": 0.009634672521915381,
+        "dev_dex_base_SU2": 0.029321381689250695,
+        "dev_dex_add_SU2": 0.9072687502860105,
+        "dev_dex_mult_SU2": 1.9286549331065737e-16,
+        "target_U1": 0.009634672521915381,
+        "dev_dex_base_U1": 0.029321381689250695,
+        "dev_dex_add_U1": 0.9072687502860105,
+        "dev_dex_mult_U1": 1.9286549331065737e-16,
+        "lam_geom_base": 0.010307618574955924,
+        "target_geom_base": 0.009634672521915378,
+        "dev_dex_geom_base": 0.029321381689250876,
+        "lam_geom_add": 0.07782259495861271,
+        "target_geom_add": 0.009634672521915378,
+        "dev_dex_geom_add": 0.9072687502860106,
+        "lam_geom_mult": 0.009634672521915388,
+        "target_geom_mult": 0.009634672521915378,
+        "dev_dex_geom_mult": 4.821637332766433e-16
+      },
+      {
+        "fermion": "tau",
+        "knot": "6_2",
+        "family": "lep",
+        "M17": 7.946945337627162,
+        "Delta_M17": -2.0429289283275205,
+        "v_mass_log": -0.05880022120516563,
+        "support_size": 18,
+        "lam_base_SU3": 0.0020664312016865443,
+        "lam_abs_base_SU3": 0.0020664312016865443,
+        "lam_add_SU3": -0.05880022120516565,
+        "lam_abs_add_SU3": 0.05880022120516565,
+        "lam_mult_abs_SU3": 0.0019484278975247186,
+        "lam_base_SU2": 0.0020664312016865443,
+        "lam_abs_base_SU2": 0.0020664312016865443,
+        "lam_add_SU2": -0.05880022120516565,
+        "lam_abs_add_SU2": 0.05880022120516565,
+        "lam_mult_abs_SU2": 0.0019484278975247186,
+        "lam_base_U1": 0.0020664312016865443,
+        "lam_abs_base_U1": 0.0020664312016865443,
+        "lam_add_U1": -0.05880022120516565,
+        "lam_abs_add_U1": 0.05880022120516565,
+        "lam_mult_abs_U1": 0.0019484278975247186,
+        "target_SU3": 0.009719003261321532,
+        "dev_dex_base_SU3": -0.6724007770958946,
+        "dev_dex_add_SU3": 0.7817572320277617,
+        "dev_dex_mult_SU3": -0.6979373886999886,
+        "target_SU2": 0.009719003261321532,
+        "dev_dex_base_SU2": -0.6724007770958946,
+        "dev_dex_add_SU2": 0.7817572320277617,
+        "dev_dex_mult_SU2": -0.6979373886999886,
+        "target_U1": 0.009719003261321532,
+        "dev_dex_base_U1": -0.6724007770958946,
+        "dev_dex_add_U1": 0.7817572320277617,
+        "dev_dex_mult_U1": -0.6979373886999886,
+        "lam_geom_base": 0.002066431201686544,
+        "target_geom_base": 0.009719003261321529,
+        "dev_dex_geom_base": -0.6724007770958945,
+        "lam_geom_add": 0.05880022120516565,
+        "target_geom_add": 0.009719003261321529,
+        "dev_dex_geom_add": 0.7817572320277618,
+        "lam_geom_mult": 0.0019484278975247194,
+        "target_geom_mult": 0.009719003261321529,
+        "dev_dex_geom_mult": -0.6979373886999882
+      },
+      {
+        "fermion": "b",
+        "knot": "7_6",
+        "family": "dn",
+        "M17": 8.432430961699314,
+        "Delta_M17": -1.5574433042553686,
+        "v_mass_log": -0.044826821694522526,
+        "support_size": 108,
+        "lam_base_SU3": -0.004466242093821905,
+        "lam_abs_base_SU3": 0.004466242093821905,
+        "lam_add_SU3": -0.04929306378834442,
+        "lam_abs_add_SU3": 0.04929306378834442,
+        "lam_mult_abs_SU3": 0.004270455681195883,
+        "lam_base_SU2": -0.004466242093821905,
+        "lam_abs_base_SU2": 0.004466242093821905,
+        "lam_add_SU2": -0.04929306378834442,
+        "lam_abs_add_SU2": 0.04929306378834442,
+        "lam_mult_abs_SU2": 0.004270455681195883,
+        "lam_base_U1": -0.004466242093821905,
+        "lam_abs_base_U1": 0.004466242093821905,
+        "lam_add_U1": -0.04929306378834442,
+        "lam_abs_add_U1": 0.04929306378834442,
+        "lam_mult_abs_U1": 0.004270455681195883,
+        "target_SU3": 0.009855764058090483,
+        "dev_dex_base_SU3": -0.3437480377392871,
+        "dev_dex_add_SU3": 0.6990955142141826,
+        "dev_dex_mult_SU3": -0.3632160790424792,
+        "target_SU2": 0.009855764058090483,
+        "dev_dex_base_SU2": -0.3437480377392871,
+        "dev_dex_add_SU2": 0.6990955142141826,
+        "dev_dex_mult_SU2": -0.3632160790424792,
+        "target_U1": 0.009855764058090483,
+        "dev_dex_base_U1": -0.3437480377392871,
+        "dev_dex_add_U1": 0.6990955142141826,
+        "dev_dex_mult_U1": -0.3632160790424792,
+        "lam_geom_base": 0.004466242093821904,
+        "target_geom_base": 0.00985576405809048,
+        "dev_dex_geom_base": -0.343748037739287,
+        "lam_geom_add": 0.04929306378834444,
+        "target_geom_add": 0.00985576405809048,
+        "dev_dex_geom_add": 0.6990955142141829,
+        "lam_geom_mult": 0.004270455681195881,
+        "target_geom_mult": 0.00985576405809048,
+        "dev_dex_geom_mult": -0.3632160790424792
+      },
+      {
+        "fermion": "t",
+        "knot": "7_7",
+        "family": "up",
+        "M17": 9.989874265954683,
+        "Delta_M17": 0.0,
+        "v_mass_log": 0.0,
+        "support_size": 81,
+        "lam_base_SU3": 0.010307618574955919,
+        "lam_abs_base_SU3": 0.010307618574955919,
+        "lam_add_SU3": 0.010307618574955919,
+        "lam_abs_add_SU3": 0.010307618574955919,
+        "lam_mult_abs_SU3": 0.010307618574955919,
+        "lam_base_SU2": 0.010307618574955919,
+        "lam_abs_base_SU2": 0.010307618574955919,
+        "lam_add_SU2": 0.010307618574955919,
+        "lam_abs_add_SU2": 0.010307618574955919,
+        "lam_mult_abs_SU2": 0.010307618574955919,
+        "lam_base_U1": 0.010307618574955919,
+        "lam_abs_base_U1": 0.010307618574955919,
+        "lam_add_U1": 0.010307618574955919,
+        "lam_abs_add_U1": 0.010307618574955919,
+        "lam_mult_abs_U1": 0.010307618574955919,
+        "target_SU3": 0.010307618574955919,
+        "dev_dex_base_SU3": 0.0,
+        "dev_dex_add_SU3": 0.0,
+        "dev_dex_mult_SU3": 0.0,
+        "target_SU2": 0.010307618574955919,
+        "dev_dex_base_SU2": 0.0,
+        "dev_dex_add_SU2": 0.0,
+        "dev_dex_mult_SU2": 0.0,
+        "target_U1": 0.010307618574955919,
+        "dev_dex_base_U1": 0.0,
+        "dev_dex_add_U1": 0.0,
+        "dev_dex_mult_U1": 0.0,
+        "lam_geom_base": 0.010307618574955916,
+        "target_geom_base": 0.010307618574955916,
+        "dev_dex_geom_base": 0.0,
+        "lam_geom_add": 0.010307618574955916,
+        "target_geom_add": 0.010307618574955916,
+        "dev_dex_geom_add": 0.0,
+        "lam_geom_mult": 0.010307618574955916,
+        "target_geom_mult": 0.010307618574955916,
+        "dev_dex_geom_mult": 0.0
+      }
+    ],
+    "metrics": {
+      "base": {
+        "SU3": {
+          "rms_dex_excl_top": 0.5936833747591993,
+          "max_abs_dex_excl_top": 1.285359007879668,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "SU2": {
+          "rms_dex_excl_top": 0.5936833747591993,
+          "max_abs_dex_excl_top": 1.285359007879668,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "U1": {
+          "rms_dex_excl_top": 0.5936833747591993,
+          "max_abs_dex_excl_top": 1.285359007879668,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "geom": {
+          "rms_dex_excl_top": 0.5936833747591994,
+          "max_abs_dex_excl_top": 1.2853590078796684,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        }
+      },
+      "add": {
+        "SU3": {
+          "rms_dex_excl_top": 1.0156780977660418,
+          "max_abs_dex_excl_top": 1.2666314273474535,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "SU2": {
+          "rms_dex_excl_top": 1.0156780977660418,
+          "max_abs_dex_excl_top": 1.2666314273474535,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "U1": {
+          "rms_dex_excl_top": 1.0156780977660418,
+          "max_abs_dex_excl_top": 1.2666314273474535,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        },
+        "geom": {
+          "rms_dex_excl_top": 1.015678097766042,
+          "max_abs_dex_excl_top": 1.2666314273474535,
+          "n_within_0p01_excl_top": 0,
+          "n_tested_excl_top": 8
+        }
+      },
+      "mult": {
+        "SU3": {
+          "rms_dex_excl_top": 0.6250371776238796,
+          "max_abs_dex_excl_top": 1.3249003094499248,
+          "n_within_0p01_excl_top": 2,
+          "n_tested_excl_top": 8
+        },
+        "SU2": {
+          "rms_dex_excl_top": 0.6250371776238796,
+          "max_abs_dex_excl_top": 1.3249003094499248,
+          "n_within_0p01_excl_top": 2,
+          "n_tested_excl_top": 8
+        },
+        "U1": {
+          "rms_dex_excl_top": 0.6250371776238796,
+          "max_abs_dex_excl_top": 1.3249003094499248,
+          "n_within_0p01_excl_top": 2,
+          "n_tested_excl_top": 8
+        },
+        "geom": {
+          "rms_dex_excl_top": 0.6250371776238794,
+          "max_abs_dex_excl_top": 1.3249003094499248,
+          "n_within_0p01_excl_top": 2,
+          "n_tested_excl_top": 8
+        }
+      }
+    }
+  },
+  "constants": {
+    "N_UV": 80,
+    "phi": 1.618033988749895,
+    "Theta_NLO": {
+      "SU3": 0.024845277,
+      "SU2": 0.0,
+      "U1": 0.0553477181
+    },
+    "Theta_V11": {
+      "SU3": 0.1871676004,
+      "SU2": 0.0,
+      "U1": -1.2108371462
+    },
+    "Theta_V19": {
+      "SU3": 0.1623223234,
+      "SU2": 0.0,
+      "U1": -1.2661848643
+    }
+  }
+}

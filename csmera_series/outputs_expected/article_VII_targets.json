@@ -1,0 +1,14 @@
+{
+  "k_norm": 16.294694713397355,
+  "Theta_V19": {"SU3": 0.1623223234, "SU2": 0.0, "U1": -1.2661848643},
+  "Theta_V11": {"SU3": 0.1871676004, "SU2": 0.0, "U1": -1.2108371462},
+  "Theta_NLO": {"SU3": 0.0248452770, "SU2": 0.0, "U1": 0.0553477181},
+  "rms_obj1_V19": 0.5937,
+  "rms_obj1_Vmass_mult": 0.6250,
+  "rms_obj3_dynkin_best_pct": 24.9,
+  "chi_uc_over_pi": -0.2,
+  "chi_ds_over_pi": 0.2,
+  "lema_cluster_status": "provado",
+  "obj1_status": "teorema_condicional",
+  "obj3_status": "inconclusivo"
+}

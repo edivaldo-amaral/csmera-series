@@ -65,3 +65,17 @@ def test_article_VI_ckm_hcp():
     approx(out['eta_bar'], 0.3486856676032578, 1e-15)
     approx(out['delta_deg'], 65.94137650808422, 1e-12)
     approx(out['J'], 3.136257074694502e-05, 1e-17)
+
+
+def test_article_vii_objectives_script_runs():
+    import subprocess, sys
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "reproduce_article_VII_objectives.py")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert "PASSOU - RMS Objetivo 1 V19 projetada" in result.stdout
+    assert "PASSOU - Constante Dynkin não universal" in result.stdout
