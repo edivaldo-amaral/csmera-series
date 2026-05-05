@@ -1,0 +1,12 @@
+{
+  "k0": 3,
+  "N_UV": 80,
+  "phi": 1.618033988749895,
+  "D_Fib_sq": 3.618033988749895,
+  "exp_cosmo": -588,
+  "exp_ew": -80,
+  "G_eff": "S(U(3) x U(2))",
+  "C_k_formula": "2k",
+  "T_k_formula": "k(k+1)/2",
+  "frustration_zero_at": 3
+}

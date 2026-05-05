@@ -79,3 +79,15 @@ def test_article_vii_objectives_script_runs():
     assert result.returncode == 0, result.stdout + result.stderr
     assert "PASSOU - RMS Objetivo 1 V19 projetada" in result.stdout
     assert "PASSOU - Constante Dynkin não universal" in result.stdout
+
+
+
+def test_article_viii_selection():
+    mod = load('reproduce_article_VIII_selecao.py')
+    out = mod.compute()
+    approx(out['phi_from_k0'], 1.618033988749895, 1e-15)
+    assert out['zero_points'] == [3]
+    assert out['N_UV'] == 80
+    approx(out['D_Fib_sq'], 3.618033988749895, 1e-15)
+    assert out['e_DE'] == 147
+    assert out['exp_cosmo'] == 588

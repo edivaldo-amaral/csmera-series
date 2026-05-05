@@ -113,3 +113,16 @@ Para reproduzir o resultado do Teorema principal do Artigo VII:
 a fase θ_i = θ_boundary(β,x) + 2π(Y_SM + t3 + t2) com coeficiente
 ntopo(Kf) × ln10/N_UV produz fechamento dinâmico global com
 ressalva na primeira geração (e, u).
+
+## Artigo VIII — Princípio de Seleção da Rede
+
+O script `reproduce_article_VIII_selecao.py` verifica as cinco
+identidades centrais do Artigo VIII:
+1. k0=3 é o único ponto de frustração nula (T_k = C_k)
+2. φ = 2cos(π/5) emerge de k=3
+3. N_UV = k0^4 − 1 = 80
+4. D_Fib^2 = 1 + φ^2
+5. Cadeia cosmológica: e_DE=147, expoente=588
+
+Nota de consistência algébrica: como `D_Fib^2 = 1 + φ^2`, então
+`D_Fib^2 = (5 + sqrt(5))/2 ≈ 3.6180339887`, não `2 + sqrt(5)`.

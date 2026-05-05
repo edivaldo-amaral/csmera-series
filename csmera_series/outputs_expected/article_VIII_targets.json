@@ -1,0 +1,10 @@
+{
+  "theorem_frustration_nula": "T_k = C_k has unique positive solution k0=3",
+  "phi_from_k0": 1.618033988749895,
+  "N_UV_from_k0": 80,
+  "G_eff_from_E": "S(U(3) x U(2))",
+  "rho_Lambda_over_rho_Pl": "phi^{-588}",
+  "v_EW_over_M_Pl": "phi^{-80} * (1 + phi^{-6})",
+  "C_k_status": "novo_postulado_variacional",
+  "artigo_IX_problema": "metrica_emergente_de_MERA"
+}
