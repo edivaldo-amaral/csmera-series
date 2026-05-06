@@ -1,0 +1,9 @@
+{
+  "pearson_Jones_vs_ntopo": -0.35,
+  "pearson_modular_vs_mass": 0.14,
+  "theorem_branch_entropy": "Delta_S_branch = ntopo * ln(phi)",
+  "proof_type": "algebraic_exact",
+  "numerical_precision": "1e-16",
+  "det_K_identity": "det(K) = |H1(Sigma2(K);Z)|",
+  "hypothesis_backreaction_status": "conjectura_estrutural"
+}

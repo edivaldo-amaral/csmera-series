@@ -16,6 +16,7 @@ SCRIPT_NAMES = [
     'reproduce_article_VII_objectives.py',
     'reproduce_article_VIII_selecao.py',
     'reproduce_article_IX_rt.py',
+    'reproduce_article_X_branch.py',
 ]
 
 def load_module(path: Path):

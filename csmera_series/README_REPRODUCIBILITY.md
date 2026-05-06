@@ -26,7 +26,7 @@ python -m pytest -q
 Expected test result:
 
 ```text
-6 passed
+10 passed
 ```
 
 ## Optional full V19 rerun
@@ -132,3 +132,19 @@ Nota de consistência algébrica: como `D_Fib^2 = 1 + φ^2`, então
 O script `reproduce_article_IX_rt.py` verifica o resultado central:
 a rede CS-MERA de vácuo com fator de ramificação K=5 reproduz o
 coeficiente de Calabrese-Cardy com erro de 0,34%.
+
+## Artigo X — Backreaction geométrica e entropia de cobertura ramificada
+
+O script `reproduce_article_X_branch.py` verifica o teorema algébrico central
+do Artigo X:
+
+```text
+Delta_S_branch(Kf) = n_topo(Kf) * ln(phi)
+```
+
+A verificação usa, para os nove férmions,
+`Delta_S_branch = ln(det K) + |sigma(K)|/2 * ln(phi)` e
+`n_topo = |sigma(K)|/2 + log_phi(det K)`. A igualdade é exata por
+álgebra, com erro numérico abaixo de `1e-10`. O artigo também registra
+como resultado negativo informativo que `ln|J_K(q_5)|^2` e a deformação
+local por dimensão quântica `d_j` não reproduzem a hierarquia de massas.

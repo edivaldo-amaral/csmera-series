@@ -1,0 +1,7 @@
+{
+  "main_theorem": "Delta_S_branch(Kf) = ntopo(Kf) * ln(phi) [exact]",
+  "main_hypothesis": "S_A^RT[Kf] - S_A^RT[Omega] = ntopo(Kf)*ln(phi) [conjecture]",
+  "pearson_Jones": -0.35,
+  "pearson_modular": 0.14,
+  "artigo_XI_problema": "Einstein_nao_linear_e_Lorentziano"
+}

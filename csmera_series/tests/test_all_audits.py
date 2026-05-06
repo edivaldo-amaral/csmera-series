@@ -103,3 +103,14 @@ def test_article_ix_rt_calabrese_cardy():
     approx(out['S_CC'], 1.7342230547376987, 1e-12)
     assert out['S_abs_diff'] < 0.01
     assert out['K_from_k0_hdual'] == 5
+
+
+
+def test_article_x_branch_entropy():
+    mod = load('reproduce_article_X_branch.py')
+    out = mod.compute()
+    assert out['max_abs_error'] < 1e-10
+    assert len(out['rows']) == 9
+    rows = {r['fermion']: r for r in out['rows']}
+    approx(rows['e']['S_branch'], rows['e']['n_topo_ln_phi'], 1e-12)
+    approx(rows['t']['S_branch'], rows['t']['n_topo_ln_phi'], 1e-12)
