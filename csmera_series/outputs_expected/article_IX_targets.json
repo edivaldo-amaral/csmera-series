@@ -1,0 +1,9 @@
+{
+  "main_result": "2*ln(phi)/ln(K) = 0.5980 approx c/3 = 0.6000, error 0.34%",
+  "K_branching": 5,
+  "coeff_RT_discrete": 0.597987,
+  "coeff_CC": 0.6,
+  "relative_error_pct": 0.3354,
+  "defect_model_status": "negative_informative",
+  "artigo_X_problema": "primeira_lei_entanglement_e_einstein_linearizado"
+}

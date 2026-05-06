@@ -1,0 +1,13 @@
+{
+  "K_branching": 5,
+  "k0": 3,
+  "h_dual": 2,
+  "phi": 1.618033988749895,
+  "central_charge_SU2_3": 1.8,
+  "c_over_3": 0.6,
+  "coeff_RT": 0.597987,
+  "error_pct": 0.3354,
+  "S_RT_electron_N18": 1.7284,
+  "S_CC_electron_N18": 1.7342,
+  "result_defect_model": "negative_informative"
+}

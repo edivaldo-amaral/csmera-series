@@ -126,3 +126,9 @@ identidades centrais do Artigo VIII:
 
 Nota de consistência algébrica: como `D_Fib^2 = 1 + φ^2`, então
 `D_Fib^2 = (5 + sqrt(5))/2 ≈ 3.6180339887`, não `2 + sqrt(5)`.
+
+## Artigo IX — Geometria Emergente e Calabrese-Cardy
+
+O script `reproduce_article_IX_rt.py` verifica o resultado central:
+a rede CS-MERA de vácuo com fator de ramificação K=5 reproduz o
+coeficiente de Calabrese-Cardy com erro de 0,34%.

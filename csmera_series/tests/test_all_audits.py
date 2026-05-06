@@ -91,3 +91,15 @@ def test_article_viii_selection():
     approx(out['D_Fib_sq'], 3.618033988749895, 1e-15)
     assert out['e_DE'] == 147
     assert out['exp_cosmo'] == 588
+
+
+def test_article_ix_rt_calabrese_cardy():
+    mod = load('reproduce_article_IX_rt.py')
+    out = mod.compute()
+    approx(out['coeff_RT'], 0.5979874356654402, 1e-12)
+    approx(out['coeff_CC'], 0.6, 1e-15)
+    assert out['error_pct'] < 1.0
+    approx(out['S_RT'], 1.728405995624138, 1e-12)
+    approx(out['S_CC'], 1.7342230547376987, 1e-12)
+    assert out['S_abs_diff'] < 0.01
+    assert out['K_from_k0_hdual'] == 5
