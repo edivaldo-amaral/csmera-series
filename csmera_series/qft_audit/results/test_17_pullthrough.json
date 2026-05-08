@@ -1,0 +1,22 @@
+{
+  "test": "QFT Test 17 - codebase SU(2)_3 pull-through verification",
+  "status": "PASS",
+  "codebase_path": "/mnt/data/work_v22/v22/external/csmera_codebase_v23",
+  "k_level": 3,
+  "num_three_leg_intertwiners": 20,
+  "num_fusion_haar_cells_with_blocks": 1536,
+  "num_unique_label_quadruples": 96,
+  "num_four_valent_intertwiner_channels": 104,
+  "stored_optimized_mera_tensor_files_found": false,
+  "stored_optimized_mera_tensor_files": [],
+  "max_three_leg_isometry_error": 1.2076272417779254e-15,
+  "max_three_leg_infinitesimal_pullthrough_error": 2.129556513004259e-15,
+  "max_three_leg_finite_pullthrough_error": 1.2561168748464429e-15,
+  "max_four_valent_projector_error": 1.214671791201952e-15,
+  "max_four_valent_infinitesimal_pullthrough_error": 3.3383744918317376e-15,
+  "max_four_valent_finite_pullthrough_error": 1.9332604939382896e-15,
+  "max_constant_twist_residual": 3.3383744918317376e-15,
+  "max_nonconstant_twist_residual": 4.136725758374611,
+  "nonzero_nonconstant_four_valent_residuals": 103,
+  "interpretation": "The SU(2)_3 fusion intertwiners generated from the v23 codebase satisfy global pull-through to machine precision. A constant local twist gives zero residual, while nonconstant twists give nonzero local residuals, identifying the candidate Kac-Moody current tensor. The v23 archive does not store optimized MERA u/w/T_v arrays, so this is a constructive codebase-fusion tensor audit, not a contraction of an optimized MERA snapshot."
+}
