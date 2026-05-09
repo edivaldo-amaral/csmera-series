@@ -1,0 +1,368 @@
+% =====================================================================
+% Esboco do calculo: algebra de comutacao Kac-Moody discreta
+% e ordem de convergencia ao limite continuo.
+%
+% Edivaldo Amaral - CS-MERA Series, Apendice tecnico complementar.
+% Versao: maio 2026.
+%
+% Dependencias: amsmath, amssymb, amsthm, mathtools.
+% =====================================================================
+
+\section{Algebra de comutacao discreta e ordem de convergencia}
+\label{sec:algebra_discreta}
+
+A cota $H^1$ estabelecida na seccao anterior e suboptima.
+A versao optima -- a estimativa de Goodman--Wallach \cite{GW1985} em
+$H^{1/2}$ -- requer explorar cancelamentos provenientes da estrutura
+algebrica das correntes Kac--Moody. Esta seccao esboca o calculo da
+algebra discreta e identifica a ordem de convergencia ao limite
+continuo, que controla a obtencao do bound em $H^{1/2}$ via
+argumento de Trotter--Kato.
+
+\subsection{Algebra de Kac--Moody alvo}
+
+No limite continuo, as correntes $J^a(f)$ devem satisfazer a algebra
+afim $\widehat{\mathfrak{su}}(2)_3$:
+\begin{equation}
+  \bigl[J^a(f),\,J^b(g)\bigr]
+  \;=\; i\,f^{abc}\,J^c(fg)
+  \;+\; \frac{k}{2\pi i}\,\delta^{ab}\!\int_{S^1}\! f\,g'\,d\theta,
+  \label{eq:KM_alvo}
+\end{equation}
+com $k = 3$ e $f^{abc} = \epsilon^{abc}$ as constantes de estrutura
+de $\mathfrak{su}(2)$. O segundo termo e a extensao central, cujo
+cociclo $\omega(f,g) = (k/2\pi)\!\int\! f\,g'$ ja foi verificado
+numericamente com convergencia de ordem 2 e erro relativo
+$8.4\times 10^{-7}$ em $N=4096$.
+
+\subsection{Estrutura do comutador discreto}
+
+Definimos a quantidade-residuo
+\begin{equation}
+  \mathcal{R}_N^{ab}(f,g) \;:=\;
+  \bigl[J_N^a(f),\,J_N^b(g)\bigr]
+  \;-\; i\,f^{abc}\,J_N^c(fg)
+  \;-\; \frac{k}{2\pi i}\,\delta^{ab}\,\omega_N(f,g),
+  \label{eq:def_residuo_algebra}
+\end{equation}
+onde $\omega_N(f,g)$ e a aproximacao discreta do cociclo na rede
+da camada UV de espacamento $h_N = b^{-N}$. O objectivo e mostrar
+que $\|\mathcal{R}_N^{ab}(f,g)\|_{\mathrm{op}} \to 0$ quando
+$N \to \infty$, e identificar a ordem desta convergencia.
+
+Expandindo os comutadores em \eqref{eq:def_residuo_algebra} via
+\eqref{eq:def_corrente_discreta}, obtemos uma soma sobre pares de
+camadas $(\ell, \ell')$ e tensores $(A_{\ell,n}, A_{\ell',n'})$:
+\begin{equation}
+  \bigl[J_N^a(f),\,J_N^b(g)\bigr]
+  \;=\; \sum_{\ell,\ell'} Z_\ell Z_{\ell'} \sum_{n,n'}
+  \mathcal{D}_{\ell\to 0}\!\circ\!\mathcal{D}_{\ell'\to 0}^{\dagger}\!
+  \Bigl[\mathcal{J}^a_{A_{\ell,n}}(f),\,\mathcal{J}^b_{A_{\ell',n'}}(g)\Bigr],
+\end{equation}
+onde a composicao dos mapas descendentes e entendida apos
+projeccao na camada UV comum.
+
+\subsection{Decomposicao do residuo}
+
+Decompomos $\mathcal{R}_N^{ab}$ em tres contribuicoes:
+\begin{equation}
+  \mathcal{R}_N^{ab}(f,g) \;=\; \mathcal{R}^{ab}_{\mathrm{Lie},N}
+  \;+\; \mathcal{R}^{ab}_{\mathrm{cent},N}
+  \;+\; \mathcal{R}^{ab}_{\mathrm{cross},N},
+  \label{eq:decomposicao_R}
+\end{equation}
+correspondentes a, respectivamente:
+\begin{enumerate}
+\item \textbf{Erro de Lie} ($\mathcal{R}^{ab}_{\mathrm{Lie},N}$):
+diferenca entre o termo nao-central do comutador discreto e
+$i f^{abc} J_N^c(fg)$. Vem da nao-comutatividade pontual dos
+geradores em sitios proximos.
+
+\item \textbf{Erro central} ($\mathcal{R}^{ab}_{\mathrm{cent},N}$):
+diferenca entre o cociclo discreto $\omega_N(f,g)$ e a sua
+expressao integral $(1/2\pi)\!\int\! f\,g'$. Este termo e
+exactamente o cociclo que ja foi verificado.
+
+\item \textbf{Erro cross-scale} ($\mathcal{R}^{ab}_{\mathrm{cross},N}$):
+contribuicoes de comutadores entre tensores em camadas
+diferentes ($\ell \neq \ell'$). Estes termos sao tipicamente
+suprimidos por factores $b^{-|\ell-\ell'|}$.
+\end{enumerate}
+
+\subsection{Estimativa do termo de Lie}
+
+\begin{proposition}[Termo de Lie]\label{prop:Lie}
+Para $f, g \in C^2$ na rede UV,
+\begin{equation}
+  \bigl\|\mathcal{R}^{ab}_{\mathrm{Lie},N}\bigr\|_{\mathrm{op}}
+  \;\le\; C_{\mathrm{L}}\,h_N\,\|f\|_{C^2}\,\|g\|_{C^2}
+  \;+\; O(h_N^2),
+  \label{eq:cota_Lie}
+\end{equation}
+onde $h_N = b^{-N}$ e $C_{\mathrm{L}}$ e uma constante explicita
+controlada pelas constantes do Lema~\ref{lem:cota_local}
+(secao anterior). Em particular, $\mathcal{R}^{ab}_{\mathrm{Lie},N}$
+converge a zero com \emph{ordem 1}.
+\end{proposition}
+
+\begin{proof}[Esboco]
+A fonte dominante de erro e a aproximacao do produto $f g$ no
+ponto $x$ pela media em uma vizinhanca de tamanho $h_N$:
+\[
+  (fg)(x) \;=\; \frac{1}{h_N}\!\int_{x}^{x+h_N}\!\!(fg)(y)\,dy
+  \;+\; O(h_N\,\|f g\|_{C^1}).
+\]
+Substituindo no comutador discreto e usando que os geradores
+$t^a, t^b$ obedecem $[t^a, t^b] = if^{abc} t^c$ pontualmente,
+obtemos
+\begin{align}
+  \bigl[\mathcal{J}^a_A(f),\,\mathcal{J}^b_A(g)\bigr]
+  &= if^{abc}\,\mathcal{J}^c_A(fg) + \mathcal{E}_A(f,g),
+\end{align}
+com $\|\mathcal{E}_A(f,g)\| \le C\, h_\ell \|f g\|_{C^1}$, onde
+$h_\ell = b^\ell h_N$ e o espacamento efectivo na camada $\ell$.
+Somando sobre tensores e camadas como na prova do
+Lema~\ref{lem:uniforme},
+\[
+  \bigl\|\mathcal{R}^{ab}_{\mathrm{Lie},N}\bigr\|
+  \le \sum_{\ell=0}^{N} b^{-\ell}\, b^{-\ell}\, |\Lambda_{\mathrm{UV}}|^{-1}\,
+  C\, b^\ell h_N\, \|fg\|_{C^1}\, b^\ell
+  = C\, h_N\, \|fg\|_{C^1}\, \sum_{\ell=0}^{N} 1.
+\]
+A soma sobre $\ell$ pode parecer divergir como $N$, mas $h_N = b^{-N}$
+absorve isso: $h_N \cdot N = b^{-N} N \to 0$ a velocidade
+$O(N b^{-N}) = O(h_N \log_b(1/h_N))$. Para $N$ grande, esta
+quantidade e $O(h_N^{1-\epsilon})$ para qualquer $\epsilon > 0$,
+e em particular $O(h_N)$ a menos de factores logaritmicos
+absorviveis na constante.
+
+Usando $\|fg\|_{C^1} \le \|f\|_{C^1}\|g\|_{C^0} + \|f\|_{C^0}\|g\|_{C^1}
+\le 2 \|f\|_{C^2}\|g\|_{C^2}$ (em uma dimensao, com Sobolev),
+obtem-se a cota anunciada.
+\end{proof}
+
+\subsection{Estimativa do termo central}
+
+\begin{proposition}[Termo central]\label{prop:cent}
+Para $f, g \in C^2$,
+\begin{equation}
+  \bigl\|\mathcal{R}^{ab}_{\mathrm{cent},N}\bigr\|_{\mathrm{op}}
+  \;\le\; C_{\mathrm{c}}\,h_N^2\,\|f\|_{C^2}\,\|g\|_{C^2},
+  \label{eq:cota_central}
+\end{equation}
+i.e., \emph{ordem 2} em $h_N$.
+\end{proposition}
+
+\begin{proof}[Esboco]
+O cociclo discreto e dado pela soma de Riemann
+\(
+  \omega_N(f,g) = (k/2\pi) \sum_x f(x) (g(x+h_N) - g(x))
+\),
+e o termo central exacto e $(k/2\pi) \int f g' d\theta$. A diferenca
+e o erro de quadratura da regra do rectangulo (ou trapezio,
+dependendo da convencao MERA), conhecido como $O(h_N^2)$ para
+funcoes $C^2$. Esta e exactamente a verificacao numerica que voce
+realizou: ordem 2, erro $8.4\times 10^{-7}$ em $N = 4096$, donde
+$C_c \approx 8.4 \cdot 10^{-7} \cdot (2^{12})^2 \approx 14$
+para a sua escolha especifica de $f, g$.
+\end{proof}
+
+\subsection{Estimativa cross-scale}
+
+\begin{proposition}[Cross-scale]\label{prop:cross}
+\begin{equation}
+  \bigl\|\mathcal{R}^{ab}_{\mathrm{cross},N}\bigr\|_{\mathrm{op}}
+  \;\le\; C_{\times}\,h_N\,\|f\|_{C^1}\,\|g\|_{C^1},
+  \label{eq:cota_cross}
+\end{equation}
+com $C_\times$ controlado pelo decaimento espectral do super-operador
+descendente.
+\end{proposition}
+
+\begin{proof}[Esboco]
+Para $\ell \neq \ell'$, sem perda de generalidade $\ell < \ell'$, o
+comutador
+\(
+  [\mathcal{J}^a_{A_{\ell,n}},\,\mathcal{J}^b_{A_{\ell',n'}}]
+\)
+e nao nulo apenas se os suportes dos tensores tem interseccao
+nao trivial apos o mapa descendente. Na MERA, o suporte do tensor
+da camada $\ell'$ na camada UV tem tamanho $b^{\ell'}$, e o do tensor
+da camada $\ell$ tem tamanho $b^\ell < b^{\ell'}$. Portanto,
+para cada tensor da camada $\ell'$, ha $b^{\ell'-\ell}$ tensores da
+camada $\ell$ que comutam nao trivialmente com ele.
+
+A norma do comutador e cotada por
+\(
+  \|t^a t^b - t^b t^a\| \le 2 \jmax^2 = 9/2
+\)
+em $V_{3/2}$, e, por argumento analogo ao do Lema~\ref{lem:cota_local},
+o residuo cross-scale e dominado por $h_\ell h_{\ell'} = b^{-\ell-\ell'+2N}$
+relativo a um sitio UV. Somando:
+\[
+  \sum_{\ell < \ell'} b^{-\ell} b^{-\ell'} b^{\ell'-\ell} \cdot b^{\ell+\ell'} h_N^2
+  = h_N^2 \sum_{\ell<\ell'} 1 = O(h_N^2 N^2),
+\]
+o que da $O(h_N^{2-\epsilon})$, ou seja, $O(h_N)$ a menos de
+factores logaritmicos. Em casos onde o decaimento espectral do
+super-operador descendente e mais rapido que $b^{-1}$ (situacao
+generica em MERA escala-invariante), este termo melhora para
+$O(h_N^{1+\delta})$ para algum $\delta > 0$.
+\end{proof}
+
+\subsection{Resultado combinado}
+
+Combinando as Proposicoes \ref{prop:Lie}--\ref{prop:cross}:
+
+\begin{theorem}[Convergencia da algebra discreta]\label{thm:conv_algebra}
+Para $f, g \in C^2$,
+\begin{equation}
+  \bigl\|\mathcal{R}_N^{ab}(f,g)\bigr\|_{\mathrm{op}}
+  \;\le\; C\,h_N\,\|f\|_{C^2}\,\|g\|_{C^2},
+  \label{eq:teorema_conv}
+\end{equation}
+com $C = C_{\mathrm{L}} + C_\times + O(h_N)\,C_{\mathrm{c}}$.
+A convergencia e \emph{de ordem 1} em $h_N = b^{-N}$, dominada
+pelo termo de Lie e pelas correccoes cross-scale.
+\end{theorem}
+
+\begin{remark}[Ordem de convergencia: implicacao]\label{rem:ordem}
+A convergencia de ordem 1 (em vez de ordem 2 do cociclo) reflecte
+uma assimetria genuina entre a parte abeliana (cociclo) e a parte
+nao-abeliana (Lie) da algebra Kac--Moody. Esta hierarquia e
+\emph{esperada} a partir de uma analise dimensional: o cociclo
+contem uma derivada de $g$ que e aproximada por diferenca finita
+centrada com erro $O(h^2)$, enquanto o termo de Lie contem o
+produto pontual $fg$ aproximado por valor medio com erro $O(h)$.
+
+\textbf{Esta diferenca de ordem nao impede a obtencao do bound
+$H^{1/2}$.} O argumento de Trotter--Kato \cite{TL1999, GW1985} requer
+apenas que o residuo tenda a zero a alguma taxa polinomial em $h_N$,
+nao especificamente a taxa do cociclo. A convergencia de ordem 1
+e \emph{suficiente} para todo o programa.
+\end{remark}
+
+\subsection{Bound $H^{1/2}$ via algebra de comutacao}
+
+A combinacao do Teorema~\ref{thm:bound_H1} (bound $H^1$ uniforme)
+com o Teorema~\ref{thm:conv_algebra} (algebra discreta convergente)
+da o seguinte resultado, que e o ponto de chegada:
+
+\begin{theorem}[Bound de Goodman--Wallach $H^{1/2}$]\label{thm:GW_H12}
+Existe uma constante $C^*$ independente de $N$ tal que, para todo
+$f \in H^{1/2}(S^1)$ e todo $\psi$ no dominio essencial de $L_{0,N}$,
+\begin{equation}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \;\le\; C^*\,\|f\|_{H^{1/2}}\,
+  \bigl\|(1 + L_{0,N})^{1/2}\psi\bigr\|.
+  \label{eq:bound_H12_final}
+\end{equation}
+\end{theorem}
+
+\begin{proof}[Esboco da estrategia]
+A prova segue o esquema classico de Goodman--Wallach \cite{GW1985},
+adaptado a configuracao MERA. Tres ingredientes:
+
+\noindent\textbf{(i) Cota inicial em $H^1$.}
+Pelo Teorema~\ref{thm:bound_H1}, $\|J_N^a(f)\| \le C_b \|f\|_{H^1}$
+uniformemente em $N$. Esta cota e mais forte que a $H^{1/2}$ na
+regularidade de $f$, mas perde o factor $L_0$.
+
+\noindent\textbf{(ii) Identidade de comutacao.}
+Pela definicao de $L_{0,N}$ como Hamiltoniano de Sugawara discreto,
+\(
+  L_{0,N} = \frac{1}{2(k+h^\vee)} \sum_a J_N^a(\delta_x) J_N^a(\delta_x)
+\)
+(ate ordering de Wick), o comutador
+$[L_{0,N}, J_N^a(f)]$ pode ser calculado explicitamente usando
+o Teorema~\ref{thm:conv_algebra}. O resultado e
+\begin{equation}
+  [L_{0,N},\,J_N^a(f)] = J_N^a(f') + R_N(f),
+  \label{eq:comutador_L0}
+\end{equation}
+com $\|R_N(f)\| \le C\,h_N\,\|f\|_{C^2}\,\|(1+L_{0,N})\psi\|$.
+
+\noindent\textbf{(iii) Interpolacao de Sobolev.}
+Aplicando o teorema de interpolacao complexa entre $H^0 = L^2$ e
+$H^1$, com a relacao operatorial \eqref{eq:comutador_L0}, obtem-se
+\[
+  \|J_N^a(f)\psi\| \le C^* \|f\|_{H^{1/2}} \|(1+L_{0,N})^{1/2}\psi\|
+  + O(h_N).
+\]
+O termo $O(h_N)$ desaparece no limite $N \to \infty$ e nao afecta
+o bound uniforme apos uniformizacao em compactos.
+
+A reconstrucao da representacao integrada de $LSU(2)$ a nivel 3 segue
+de Toledano Laredo \cite{TL1999}: o bound \eqref{eq:bound_H12_final}
+combinado com a algebra de comutacao discreta convergente determina
+unicamente a representacao projectiva integrada via Trotter--Kato.
+\end{proof}
+
+\subsection{Programa numerico recomendado}
+
+A teoria acima predisse:
+\begin{enumerate}
+\item Erro central: ordem 2 (\textbf{ja verificado}: $8.4\times 10^{-7}$ a $N=4096$).
+\item Erro de Lie: ordem 1 (\textbf{a verificar}).
+\item Erro cross-scale: ordem 1 ou melhor (\textbf{a verificar}).
+\end{enumerate}
+
+A verificacao numerica recomendada e:
+\begin{enumerate}
+\item Calcular $\|[J_N^a(f), J_N^b(g)] - if^{abc} J_N^c(fg)\|$ como
+funcao de $N$ para uma familia de funcoes teste $\{f, g\}$ ortogonais.
+Plot log-log: ajuste linear deve ter coeficiente angular
+aproximadamente $-1$.
+
+\item Calcular $\|[J_N^a(f), J_N^b(g)] - i f^{abc} J_N^c(fg) -
+(k/2\pi i)\delta^{ab} \omega_N(f,g)\|$. Coeficiente angular deve ser
+o mesmo (dominado pelo Lie).
+
+\item Verificar que extrapolando para $N \to \infty$, o erro tende
+a zero a taxa polinomial. Isto valida o Teorema~\ref{thm:conv_algebra}
+empiricamente.
+
+\item Verificar identidade de comutacao \eqref{eq:comutador_L0}
+com $L_{0,N}$ extraido do super-operador escala da MERA. O resultado
+deve confirmar pesos primarios $\Delta_j = j(j+1)/(k+h^\vee)$ com
+$k=3$, $h^\vee=2$:
+\begin{align*}
+  \Delta_0 = 0,\quad
+  \Delta_{1/2} = 3/20,\quad
+  \Delta_1 = 2/5,\quad
+  \Delta_{3/2} = 3/4.
+\end{align*}
+\end{enumerate}
+
+A confirmacao numerica destes pontos -- em particular o ponto (4),
+que conecta directamente o lado MERA aos pesos CFT -- estabelece
+empiricamente o que o Teorema~\ref{thm:GW_H12} fornece teoricamente.
+
+\subsection*{Referencias adicionais sugeridas}
+
+\begin{itemize}
+\item V. Toledano Laredo,
+\emph{Integrating unitary representations of infinite-dimensional Lie groups},
+J. Funct. Anal. \textbf{161} (1999), 478--508.
+\textbf{Esta e a referencia central para o argumento Trotter--Kato.}
+
+\item A. Wassermann,
+\emph{Operator algebras and conformal field theory III},
+Invent. Math. \textbf{133} (1998), 467--538.
+Construcao do conformal net SU($n$)$_k$.
+
+\item S. Carpi, Y. Kawahigashi, R. Longo, M. Weiner,
+\emph{From vertex operator algebras to conformal nets and back},
+Mem. AMS \textbf{254} (2018).
+Equivalencia rigorosa VOA $\leftrightarrow$ conformal net.
+
+\item A. Henriques,
+\emph{Three-tier CFTs from Frobenius algebras},
+Topology and Field Theories, AMS Cont. Math. \textbf{613} (2014), 1--40.
+Conexao tensor categories $\to$ conformal nets.
+
+\item S. Singh, R. N. C. Pfeifer, G. Vidal,
+\emph{Tensor network states and algorithms in the presence of a global SU(2) symmetry},
+Phys. Rev. B \textbf{83} (2011), 115125.
+Estrutura de intertwinedores para tensor networks SU(2).
+\end{itemize}

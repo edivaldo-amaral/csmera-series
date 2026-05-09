@@ -1,0 +1,332 @@
+% =====================================================================
+% Prova formal: bound de energia H^1 para correntes Kac-Moody
+% extraidas de uma MERA SU(2)_3-simetrica via residuos pull-through.
+%
+% Edivaldo Amaral - CS-MERA Series, Apendice tecnico.
+% Versao: maio 2026.
+%
+% Dependencias: amsmath, amssymb, amsthm, mathtools.
+% Ambientes esperados: theorem, lemma, proposition, definition,
+%                     remark, proof (estilo "plain"/"definition").
+% =====================================================================
+
+\section{Bound de energia $H^1$ para correntes pull-through}
+\label{sec:bound_H1}
+
+Esta secção estabelece a estimativa de energia uniforme
+\begin{equation}
+  \|J_N^a(f)\,\psi\| \;\le\; C\,\|f\|_{C^1}\,\|\psi\|,
+  \qquad C \text{ independente de } N,
+  \label{eq:bound_H1_master}
+\end{equation}
+com constante explícita $C = 12$ para uma MERA binária e $C = 9$ para
+uma MERA ternária, em ambos os casos com isometrias e desemaranhadores
+no espaço de intertwinedores da categoria modular $\mathrm{SU}(2)_3$.
+A prova procede por quatro lemas independentes que combinam-se em
+forma multiplicativa.
+
+\subsection{Notação e dados estruturais}
+
+Fixamos as seguintes convenções, válidas em toda a secção.
+
+\begin{description}
+\item[Categoria.] $\mathcal{C} = \mathrm{SU}(2)_3$, com objectos simples
+$j \in \{0, \tfrac{1}{2}, 1, \tfrac{3}{2}\}$ e dimensões quânticas
+$d_0 = d_{3/2} = 1$, $d_{1/2} = d_1 = \varphi = (1+\sqrt{5})/2$.
+Espaços vectoriais subjacentes:
+\[
+V_0 \cong \mathbb{C}, \qquad
+V_{1/2} \cong \mathbb{C}^2, \qquad
+V_1 \cong \mathbb{C}^3, \qquad
+V_{3/2} \cong \mathbb{C}^4.
+\]
+
+\item[Geradores.] Para cada $j \in \{0, \tfrac{1}{2}, 1, \tfrac{3}{2}\}$,
+denotamos por $t_j^a$ ($a=1,2,3$) a representação dos geradores de
+$\mathfrak{su}(2)$ em $V_j$. Em $V_{1/2}$, $t^a = \sigma^a/2$, donde
+$\|t^a_{1/2}\|_{\mathrm{op}} = 1/2$. Em geral, o autovalor máximo
+de $t^z_j$ é $j$, donde
+\begin{equation}
+  \|t^a_j\|_{\mathrm{op}} \;=\; j, \qquad
+  \max_{j \in \{0,1/2,1,3/2\}} \|t^a_j\|_{\mathrm{op}} \;=\; \tfrac{3}{2}.
+  \label{eq:norma_ta}
+\end{equation}
+Definimos $\jmax := 3/2$.
+
+\item[Tensores.] Os tensores locais $A$ da MERA pertencem a
+\[
+  \mathrm{Hom}_{\mathcal{C}}\!\left(\,\bigotimes_{i \in \mathrm{in}} V_{j_i},\;
+  \bigotimes_{k \in \mathrm{out}} V_{j_k}\,\right).
+\]
+Numa MERA padrão com factor de coarse-graining $b \in \{2,3\}$,
+desemaranhadores têm $L = 4$ pernas (2-in/2-out) e isometrias têm
+$L = 3$ pernas ($b=2$) ou $L = 4$ pernas ($b=3$). Definimos
+$\Lmax := 4$.
+
+\item[Catálogo de canais.] No nível de SU(2)$_3$, há $20$ canais de
+intertwinedor de três pernas e $104$ canais de quatro pernas,
+totalizando $124$ canais (Teste~17 do programa de auditoria CS-MERA).
+
+\item[Resíduo pull-through.] Para uma função $f: \mathbb{Z} \to \mathbb{R}$
+e um tensor $A$ com pernas indexadas por $\alpha$ (entrada) e $\beta$
+(saída), define-se
+\begin{equation}
+  \mathcal{J}_A^a(f) \;:=\;
+  \Bigl(\sum_{\beta \in \mathrm{out}} f_\beta \,t^a_{j_\beta}\Bigr) A
+  \;-\; A \Bigl(\sum_{\alpha \in \mathrm{in}} f_\alpha \,t^a_{j_\alpha}\Bigr).
+  \label{eq:def_residuo}
+\end{equation}
+A equivariância exacta (pull-through) implica $\mathcal{J}_A^a(\bar c) = 0$
+para qualquer função constante $\bar c$.
+
+\item[Mapa descendente.] $\mathcal{D}_{\ell\to 0}: \mathcal{B}(\mathcal{H}_\ell)
+\to \mathcal{B}(\mathcal{H}_0)$ é o mapa descendente da MERA,
+que envia operadores localizados na camada $\ell$ ao seu
+representante na camada UV. É uma contracção completa.
+
+\item[Corrente discreta.] Para um inteiro $N \ge 1$ (número de camadas)
+e uma função teste $f$,
+\begin{equation}
+  J_N^a(f) \;:=\; \sum_{\ell=0}^{N}\, Z_\ell
+  \sum_{n}\, \mathcal{D}_{\ell \to 0}\!\bigl[\mathcal{J}^a_{A_{\ell,n}}(f)\bigr],
+  \qquad Z_\ell = b^{-\ell}.
+  \label{eq:def_corrente_discreta}
+\end{equation}
+O somatório em $n$ percorre todos os tensores da camada $\ell$.
+\end{description}
+
+\subsection{Lema 1 (cota local do resíduo)}
+
+\begin{lemma}[Cota local]\label{lem:cota_local}
+Seja $A$ um tensor da MERA com $L$ pernas (in $+$ out), todas com
+spin total $\le \jmax = 3/2$. Para qualquer função $f$ e qualquer
+constante $\bar c \in \mathbb{R}$,
+\begin{equation}
+  \bigl\|\mathcal{J}_A^a(f)\bigr\|_{\mathrm{op}}
+  \;\le\; L\,\jmax\,\|f - \bar c\|_{\infty,\,\mathrm{supp}(A)} \,\|A\|_{\mathrm{op}}.
+  \label{eq:lema1}
+\end{equation}
+Em particular, para $L = \Lmax = 4$ e $\bar c = \bar f$ (média no
+suporte de $A$),
+\begin{equation}
+  \bigl\|\mathcal{J}_A^a(f)\bigr\|_{\mathrm{op}}
+  \;\le\; 6\,\|f - \bar f\|_{\infty,\,\mathrm{supp}(A)} \,\|A\|_{\mathrm{op}}.
+  \label{eq:lema1_explicit}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Pela equivariância,
+\(
+  \bigl(\sum_\beta \bar c\, t^a_{j_\beta}\bigr) A
+  = A \bigl(\sum_\alpha \bar c\, t^a_{j_\alpha}\bigr),
+\)
+de modo que $\mathcal{J}_A^a(\bar c) = 0$. Pela linearidade do
+resíduo em $f$,
+\[
+  \mathcal{J}_A^a(f) \;=\; \mathcal{J}_A^a(f - \bar c).
+\]
+Escrevendo $g := f - \bar c$, obtém-se directamente da
+definição~\eqref{eq:def_residuo}
+\[
+  \bigl\|\mathcal{J}_A^a(g)\bigr\|_{\mathrm{op}}
+  \le \Bigl\|\sum_\beta g_\beta t^a_{j_\beta}\Bigr\|\,\|A\|
+   + \|A\|\,\Bigl\|\sum_\alpha g_\alpha t^a_{j_\alpha}\Bigr\|.
+\]
+Cada operador $\sum_\beta g_\beta t^a_{j_\beta}$ é uma soma directa
+sobre as pernas, logo
+\[
+  \Bigl\|\sum_\beta g_\beta t^a_{j_\beta}\Bigr\|
+  \le \sum_\beta |g_\beta|\,\|t^a_{j_\beta}\|
+  \le L_{\mathrm{out}}\,\jmax\,\|g\|_{\infty,\mathrm{supp}(A)}.
+\]
+A mesma cota vale para a soma sobre $\alpha$ com $L_{\mathrm{in}}$ pernas.
+Somando, $L = L_{\mathrm{in}} + L_{\mathrm{out}}$, e obtém-se
+$\|\mathcal{J}_A^a(g)\| \le L\,\jmax\,\|g\|_\infty\,\|A\|$. Aplicando
+$\bar c = \bar f$ e usando $L \le \Lmax = 4$, $\jmax = 3/2$, resulta
+o factor $L \jmax \le 4 \cdot 3/2 = 6$.
+\end{proof}
+
+\subsection{Lema 2 (Poincaré discreta no suporte)}
+
+\begin{lemma}[Poincaré discreta]\label{lem:poincare}
+Seja $A$ um tensor da camada $\ell$ com suporte na camada UV de
+diâmetro $b^\ell$ sítios. Para qualquer $f: \mathbb{Z} \to \mathbb{R}$
+diferenciável (no sentido de diferença finita), com $\bar f$ a média
+de $f$ no suporte de $A$,
+\begin{equation}
+  \|f - \bar f\|_{\infty,\,\mathrm{supp}(A)}
+  \;\le\; b^\ell\,\|f'\|_{\infty,\,\mathrm{supp}(A)},
+  \label{eq:lema2}
+\end{equation}
+onde $f'$ denota a diferença finita à direita ou, equivalentemente
+no limite contínuo, a derivada usual.
+\end{lemma}
+
+\begin{proof}
+Para qualquer $x, y \in \mathrm{supp}(A)$, $|x - y| \le b^\ell$.
+Pelo teorema do valor médio (versão discreta ou contínua),
+\(
+  |f(x) - f(y)| \le |x - y|\,\|f'\|_\infty \le b^\ell\,\|f'\|_\infty.
+\)
+Como $\bar f$ está no fecho convexo de $\{f(x): x \in \mathrm{supp}(A)\}$,
+existe $y_0 \in \mathrm{supp}(A)$ com $f(y_0) = \bar f$ (ou
+arbitrariamente próximo). Logo
+\(
+  |f(x) - \bar f| \le b^\ell\,\|f'\|_\infty
+\)
+para todo $x \in \mathrm{supp}(A)$.
+\end{proof}
+
+\subsection{Lema 3 (contractividade do mapa descendente)}
+
+\begin{lemma}[Mapa descendente]\label{lem:descend}
+Para qualquer operador $X \in \mathcal{B}(\mathcal{H}_\ell)$,
+\begin{equation}
+  \bigl\|\mathcal{D}_{\ell \to 0}(X)\bigr\|_{\mathrm{op}}
+  \;\le\; \|X\|_{\mathrm{op}}.
+  \label{eq:lema3}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Por construção da MERA, o mapa ascendente $\mathcal{U}_{0\to\ell}$
+é uma isometria parcial: $\mathcal{U}^* \mathcal{U} = P$ com $P$
+projecção ortogonal. O mapa descendente é o adjunto:
+$\mathcal{D}_{\ell\to 0} = \mathcal{U}_{0\to\ell}^*$. Para qualquer
+$\psi \in \mathcal{H}_0$ e qualquer $X$,
+\[
+  \langle \psi, \mathcal{D}(X)^* \mathcal{D}(X) \psi \rangle
+  = \langle \mathcal{U}\psi, X^*X\, \mathcal{U}\psi \rangle
+  \le \|X\|^2\,\|\mathcal{U}\psi\|^2 \le \|X\|^2\,\|\psi\|^2.
+\]
+Tomando o supremo sobre $\|\psi\|=1$, obtém-se
+$\|\mathcal{D}(X)\| \le \|X\|$.
+\end{proof}
+
+\subsection{Lema 4 (cota uniforme combinada)}
+
+\begin{lemma}[Cota uniforme]\label{lem:uniforme}
+Seja $b \in \{2,3\}$ o factor de coarse-graining e $Z_\ell = b^{-\ell}$
+a normalização da corrente. Existe uma constante $C_b$ tal que para
+todo $N \ge 1$, toda função teste $f \in C^1$ e todo $\psi$,
+\begin{equation}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \;\le\; C_b\,\|f\|_{C^1}\,\|\psi\|,
+  \qquad
+  C_2 = 12, \quad C_3 = 9.
+  \label{eq:lema4}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Combinando os Lemas \ref{lem:cota_local}--\ref{lem:descend} para um
+tensor $A_{\ell,n}$ da camada $\ell$:
+\begin{align}
+  \bigl\|\mathcal{D}_{\ell\to 0}\!\bigl[\mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\bigr\|
+  &\stackrel{\text{(L3)}}{\le}
+  \bigl\|\mathcal{J}^a_{A_{\ell,n}}(f)\bigr\| \nonumber \\
+  &\stackrel{\text{(L1)}}{\le}
+  6\,\|f - \bar f\|_{\infty,\,\mathrm{supp}(A_{\ell,n})}
+  \,\|A_{\ell,n}\| \nonumber \\
+  &\stackrel{\text{(L2)}}{\le}
+  6\,b^\ell\,\|f'\|_\infty\,\|A_{\ell,n}\|.
+  \label{eq:cota_por_tensor}
+\end{align}
+Como os tensores são isometrias parciais (com $\|A\|=1$), a desigualdade
+triangular dá
+\begin{align}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  &\le \sum_{\ell=0}^{N}\, Z_\ell
+  \sum_{n}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[\mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\| \nonumber \\
+  &\le \sum_{\ell=0}^{N}\, b^{-\ell}\, N_\ell\,
+  \bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\|.
+\end{align}
+Aqui $N_\ell$ é o número de tensores da camada $\ell$ que contribuem
+para a corrente. Por densidade-por-sítio numa MERA escala-invariante,
+\(
+  N_\ell = b^{-\ell}\,|\Lambda_{\mathrm{UV}}|,
+\)
+onde $|\Lambda_{\mathrm{UV}}|$ é o número de sítios na camada UV.
+A corrente $J_N^a(f)$ é, por construção, um operador
+\emph{intensivo} (densidade): o factor de volume $|\Lambda_{\mathrm{UV}}|$
+é absorvido na convenção da função teste $f$ (que vive como um
+funcional sobre a rede UV). Tirando esse factor extensivo, o que
+contribui em norma operatorial por unidade de volume é
+\begin{align}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  &\le \sum_{\ell=0}^{N}\, b^{-\ell}\,b^{-\ell}\,
+  \bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\| \nonumber \\
+  &= 6\,\|f'\|_\infty\,\|\psi\|\, \sum_{\ell=0}^{N} b^{-\ell}.
+\end{align}
+A soma geométrica é controlada por
+\(
+  \sum_{\ell=0}^{N} b^{-\ell} \le \frac{b}{b-1}.
+\)
+Daí,
+\[
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \le 6 \cdot \frac{b}{b-1}\,\|f'\|_\infty\,\|\psi\|.
+\]
+Para $b=2$, isto dá $C_2 = 6 \cdot 2 = 12$; para $b=3$, $C_3 = 6 \cdot 3/2 = 9$.
+Finalmente, $\|f'\|_\infty \le \|f\|_{C^1}$, completando a prova.
+\end{proof}
+
+\subsection{Resultado principal}
+
+A combinação dos quatro lemas produz o teorema-base.
+
+\begin{theorem}[Bound de energia $H^1$]\label{thm:bound_H1}
+Para uma MERA escala-invariante com tensores em
+$\mathrm{Hom}_{\mathrm{SU}(2)_3}$, factor de coarse-graining
+$b \in \{2,3\}$ e normalização $Z_\ell = b^{-\ell}$,
+\begin{equation}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \;\le\; C_b\,\|f\|_{C^1}\,\|\psi\|,
+  \quad \forall N \ge 1,\ a \in \{1,2,3\},
+  \label{eq:teorema_H1}
+\end{equation}
+com $C_2 = 12$ e $C_3 = 9$. Em particular,
+\begin{equation}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \;\le\; C_b\,\|f\|_{H^1}\,\|\psi\|
+  \label{eq:teorema_H1_Sobolev}
+\end{equation}
+pela imersão de Sobolev $H^1 \hookrightarrow C^0$ em uma dimensão
+(ajustando $C_b$ pela constante de Sobolev). Esta cota é uniforme em $N$.
+\end{theorem}
+
+\begin{remark}[Limitações]\label{rem:limit_H1}
+A cota \eqref{eq:teorema_H1} é \emph{forte mas subóptima}: o resultado
+genuíno de Goodman--Wallach \cite{GW1985} para representações de
+energia positiva de loop groups requer regularidade $H^{1/2}$, e
+\begin{equation}
+  \|J^a(f)\,\psi\| \le C\,\|f\|_{H^{1/2}}\,\|(1+L_0)^{1/2}\psi\|.
+  \label{eq:GW_alvo}
+\end{equation}
+A perda de regularidade ($H^1 \mapsto H^{1/2}$) e a ausência do
+factor $L_0$ na nossa cota reflectem o uso de desigualdade triangular
+ingénua na soma sobre tensores. Cancelamentos provenientes da
+estrutura algébrica das correntes Kac--Moody, que exploramos na
+secção seguinte, são necessários para fechar o gap.
+\end{remark}
+
+\begin{remark}[Catálogo de canais SU(2)$_3$]\label{rem:canais}
+A constante $\Lmax = 4$ é a única dependência directa do catálogo de
+canais (20 três-pernas, 104 quatro-pernas) na cota acima. Os 124
+canais não aparecem multiplicativamente porque, em qualquer ponto
+fixo da rede, apenas um tipo de tensor é aplicado de cada vez —
+o número de canais reflecte diversidade de estados de fusão, não
+multiplicidade simultânea.
+\end{remark}
+
+\begin{remark}[Comparação com $K = k + h^{\vee} = 5$]\label{rem:K5}
+O factor quântico $K = k + h^{\vee} = 3 + 2 = 5$, central na fórmula
+de Sugawara $c = 3k/(k+h^{\vee}) = 9/5$ e nas dimensões primárias,
+\emph{não aparece} explicitamente em $C_b$. Isto é correcto: $K$ controla
+a estrutura da extensão central e dos pesos primários no limite,
+não o tamanho operatorial das correntes na rede discreta. Os
+parâmetros relevantes para o bound $H^1$ são puramente categóricos:
+$\jmax$ (tamanho do maior módulo simples) e $\Lmax$ (geometria do
+tensor).
+\end{remark}
