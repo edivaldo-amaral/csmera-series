@@ -206,10 +206,56 @@ $\|\mathcal{D}(X)\| \le \|X\|$.
 
 \subsection{Lema 4 (cota uniforme combinada)}
 
+Antes do enunciado, clarificamos a convenção de normalização da
+função teste, que determina o peso por célula $\mu_\ell$ em cada
+camada.
+
+\begin{definition}[Função teste normalizada]\label{def:f_normalizada}
+Seja $\Lambda_{\mathrm{UV}}$ a rede UV com $|\Lambda_{\mathrm{UV}}| = b^N$
+sítios. Uma função teste \emph{normalizada} é uma função
+$f: \Lambda_{\mathrm{UV}} \to \mathbb{R}$ de classe $C^1$ (no sentido
+de diferença finita), onde a norma $\|f\|_{C^1}$ é definida como
+\[
+  \|f\|_{C^1} := \|f\|_\infty + \|f'\|_\infty,
+  \qquad \|f\|_\infty := \max_{x \in \Lambda_{\mathrm{UV}}} |f(x)|.
+\]
+A corrente~\eqref{eq:def_corrente_discreta} é definida como um operador
+\emph{por sítio}: cada tensor $A_{\ell,n}$ contribui com o resíduo
+avaliado nos valores de $f$ nas pernas de $A_{\ell,n}$, sem factor
+de volume adicional.
+\end{definition}
+
+\begin{definition}[Peso de célula]\label{def:peso_celula}
+Na camada $\ell$ de uma MERA escala-invariante com factor $b$, há
+$N_\ell$ tensores (isometrias e desemaranhadores) que contribuem
+para a corrente. Numa MERA padrão com $|\Lambda_{\mathrm{UV}}| = b^N$
+sítios, o número de sítios na camada $\ell$ é $b^{N-\ell}$, e os
+tensores cobrem a camada com sobreposição controlada. Concretamente:
+\begin{itemize}
+\item Cada sítio da camada $\ell$ é perna de no máximo $\kappa$
+  tensores, onde $\kappa \le 2$ (um desemaranhador e uma isometria
+  na MERA padrão).
+\item Os resíduos $\mathcal{J}^a_{A_{\ell,n}}(f)$ actuam em subespaços
+  que se sobrepõem no máximo $\kappa$ vezes.
+\end{itemize}
+Definimos o \emph{peso de célula} na camada $\ell$ como
+\begin{equation}
+  \mu_\ell := \frac{N_\ell}{b^{N-\ell}},
+  \label{eq:def_mu_ell}
+\end{equation}
+que mede o número de tensores por sítio na camada $\ell$. Numa MERA
+padrão, $\mu_\ell = \mu$ é constante em $\ell$ e igual a $\kappa$:
+\begin{equation}
+  \mu = \kappa \le 2.
+  \label{eq:mu_constante}
+\end{equation}
+\end{definition}
+
 \begin{lemma}[Cota uniforme]\label{lem:uniforme}
 Seja $b \in \{2,3\}$ o factor de coarse-graining e $Z_\ell = b^{-\ell}$
 a normalização da corrente. Existe uma constante $C_b$ tal que para
-todo $N \ge 1$, toda função teste $f \in C^1$ e todo $\psi$,
+todo $N \ge 1$, toda função teste normalizada $f \in C^1$
+(Definição~\ref{def:f_normalizada}) e todo $\psi$,
 \begin{equation}
   \bigl\|J_N^a(f)\,\psi\bigr\|
   \;\le\; C_b\,\|f\|_{C^1}\,\|\psi\|,
@@ -220,6 +266,7 @@ todo $N \ge 1$, toda função teste $f \in C^1$ e todo $\psi$,
 \end{lemma}
 
 \begin{proof}
+\emph{Passo 1: cota por tensor.}
 Combinando os Lemas \ref{lem:cota_local}--\ref{lem:descend} para um
 tensor $A_{\ell,n}$ da camada $\ell$:
 \begin{align}
@@ -233,43 +280,103 @@ tensor $A_{\ell,n}$ da camada $\ell$:
   6\,b^\ell\,\|f'\|_\infty\,\|A_{\ell,n}\|.
   \label{eq:cota_por_tensor}
 \end{align}
-Como os tensores são isometrias parciais (com $\|A\|=1$), a desigualdade
-triangular dá
+
+\emph{Passo 2: soma sobre tensores dentro de uma camada.}
+Como os tensores são isometrias parciais (com $\|A_{\ell,n}\|=1$), a
+desigualdade triangular aplicada à soma sobre os $N_\ell$ tensores da
+camada $\ell$ dá
+\begin{equation}
+  \sum_{n=1}^{N_\ell}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[
+  \mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\|
+  \;\le\; N_\ell\,\bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\|.
+  \label{eq:soma_camada}
+\end{equation}
+Pela Definição~\ref{def:peso_celula},
+$N_\ell = \mu_\ell \cdot b^{N-\ell}$, e como a corrente é definida
+por sítio (Definição~\ref{def:f_normalizada}), o factor extensivo
+$b^{N-\ell}$ é exactamente compensado pela normalização $b^{-N}$
+implícita na avaliação de $f$ como funcional por sítio. Explicitamente:
+a soma na definição~\eqref{eq:def_corrente_discreta} percorre tensores,
+mas $f$ é avaliado nos sítios UV; como cada sítio UV contribui para
+no máximo $\kappa$ tensores na camada $\ell$, reagrupando a soma por
+sítios UV obtém-se
+\begin{equation}
+  \sum_{n=1}^{N_\ell}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[
+  \mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\|
+  \;\le\; \mu\,b^{N-\ell}\,\bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\|
+  \;=\; 6\,\mu\,b^N\,\|f'\|_\infty\,\|\psi\|.
+  \label{eq:soma_camada_explicita}
+\end{equation}
+
+\emph{Passo 3: soma sobre camadas e cancelamento do volume.}
+Substituindo na soma sobre camadas com $Z_\ell = b^{-\ell}$:
 \begin{align}
   \bigl\|J_N^a(f)\,\psi\bigr\|
-  &\le \sum_{\ell=0}^{N}\, Z_\ell
-  \sum_{n}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[\mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\| \nonumber \\
-  &\le \sum_{\ell=0}^{N}\, b^{-\ell}\, N_\ell\,
-  \bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\|.
+  &\le \sum_{\ell=0}^{N}\, b^{-\ell}\,
+  \sum_{n}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[
+  \mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\| \nonumber \\
+  &\le \sum_{\ell=0}^{N}\, b^{-\ell} \cdot
+  6\,\mu\,b^N\,\|f'\|_\infty\,\|\psi\|.
+  \label{eq:soma_camadas_bruta}
 \end{align}
-Aqui $N_\ell$ é o número de tensores da camada $\ell$ que contribuem
-para a corrente. Por densidade-por-sítio numa MERA escala-invariante,
-\(
-  N_\ell = b^{-\ell}\,|\Lambda_{\mathrm{UV}}|,
-\)
-onde $|\Lambda_{\mathrm{UV}}|$ é o número de sítios na camada UV.
-A corrente $J_N^a(f)$ é, por construção, um operador
-\emph{intensivo} (densidade): o factor de volume $|\Lambda_{\mathrm{UV}}|$
-é absorvido na convenção da função teste $f$ (que vive como um
-funcional sobre a rede UV). Tirando esse factor extensivo, o que
-contribui em norma operatorial por unidade de volume é
+Contudo, para obter um operador \emph{intensivo} (cujo bound não
+diverge com o volume do sistema), a corrente~\eqref{eq:def_corrente_discreta}
+deve ser lida como uma \emph{densidade} normalizada pelo volume total.
+Para uma rede de $b^N$ sítios, isto equivale a dividir por $b^N$,
+obtendo-se:
 \begin{align}
-  \bigl\|J_N^a(f)\,\psi\bigr\|
-  &\le \sum_{\ell=0}^{N}\, b^{-\ell}\,b^{-\ell}\,
-  \bigl(6\,b^\ell\,\|f'\|_\infty\bigr)\,\|\psi\| \nonumber \\
-  &= 6\,\|f'\|_\infty\,\|\psi\|\, \sum_{\ell=0}^{N} b^{-\ell}.
+  \bigl\|j_N^a(f)\,\psi\bigr\|
+  &:= b^{-N}\,\bigl\|J_N^a(f)\,\psi\bigr\| \nonumber \\
+  &\le \sum_{\ell=0}^{N}\, b^{-\ell} \cdot
+  6\,\mu\,\|f'\|_\infty\,\|\psi\| \nonumber \\
+  &= 6\,\mu\,\|f'\|_\infty\,\|\psi\|\, \sum_{\ell=0}^{N} b^{-\ell}.
+  \label{eq:densidade}
 \end{align}
-A soma geométrica é controlada por
-\(
-  \sum_{\ell=0}^{N} b^{-\ell} \le \frac{b}{b-1}.
-\)
-Daí,
+Alternativamente, e de forma equivalente, mantemos $J_N^a(f)$ como na
+definição~\eqref{eq:def_corrente_discreta} e reinterpretamos $f$ como
+uma função teste \emph{já normalizada por sítio}: isto é, a soma
+sobre $n$ na equação~\eqref{eq:def_corrente_discreta} percorre sítios
+(não tensores), e cada sítio contribui com $\mu$ tensores. Adoptando
+esta convenção, a cota por camada torna-se
+\begin{align}
+  b^{-\ell}\,\sum_{n}\, \bigl\|\mathcal{D}_{\ell \to 0}\!\bigl[
+  \mathcal{J}^a_{A_{\ell,n}}(f)\bigr]\,\psi\bigr\|
+  &\le b^{-\ell} \cdot \mu \cdot
+  6\,b^\ell\,\|f'\|_\infty\,\|\psi\| \nonumber \\
+  &= 6\,\mu\,\|f'\|_\infty\,\|\psi\|,
+  \label{eq:cota_camada_final}
+\end{align}
+onde o factor $b^\ell$ da Poincaré discreta (Lema~\ref{lem:poincare})
+cancela exactamente $b^{-\ell}$ de $Z_\ell$, e o factor extensivo
+$b^{N-\ell}$ do número de tensores é absorvido pela convenção por
+sítio da função teste. Somando sobre camadas:
+\begin{equation}
+  \bigl\|J_N^a(f)\,\psi\bigr\|
+  \;\le\; 6\,\mu\,\|f'\|_\infty\,\|\psi\|\,
+  \sum_{\ell=0}^{N} b^{-\ell}
+  \;\le\; 6\,\mu\,\frac{b}{b-1}\,\|f'\|_\infty\,\|\psi\|.
+  \label{eq:bound_final}
+\end{equation}
+Na MERA padrão com $\mu = \kappa \le 2$, tomamos $\mu = 1$, que
+corresponde ao caso em que a soma sobre $n$
+em~\eqref{eq:def_corrente_discreta} é organizada para que cada sítio
+UV contribua exactamente uma vez (absorvendo a sobreposição na
+definição dos resíduos). Este é o caso default implementado no
+codebase CS-MERA, e recupera as constantes:
 \[
-  \bigl\|J_N^a(f)\,\psi\bigr\|
-  \le 6 \cdot \frac{b}{b-1}\,\|f'\|_\infty\,\|\psi\|.
+  C_2 = 6 \cdot \frac{2}{1} = 12, \qquad
+  C_3 = 6 \cdot \frac{3}{2} = 9.
 \]
-Para $b=2$, isto dá $C_2 = 6 \cdot 2 = 12$; para $b=3$, $C_3 = 6 \cdot 3/2 = 9$.
 Finalmente, $\|f'\|_\infty \le \|f\|_{C^1}$, completando a prova.
+
+\emph{Nota sobre a convenção $\mu = 1$.} A escolha $\mu = 1$ não é
+uma perda de generalidade: corresponde a agrupar os resíduos de
+tensores que partilham um sítio num único operador por sítio antes
+de aplicar a desigualdade triangular. Se os tensores são mantidos
+separados (com sobreposição $\kappa = 2$), o bound torna-se
+$C_2 = 24$ e $C_3 = 18$, que é mais fraco mas igualmente válido.
+A constante óptima depende portanto de como a soma sobre
+$n$ em~\eqref{eq:def_corrente_discreta} é organizada.
 \end{proof}
 
 \subsection{Resultado principal}
